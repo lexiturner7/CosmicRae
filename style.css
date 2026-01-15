@@ -1,0 +1,38 @@
+:root {
+  --deepSpaceBlue: #0B1C2D ;
+  --starPurple: #4B3F72;
+  --rocketYellow: #FFD166;
+  --planetTeal: #2EC4B6;
+}
+
+
+
+body {
+    background-color: var(--deepSpaceBlue);
+}
+
+header {
+    color: var(--planetTeal);
+}
+
+.nav-btn {
+  background: var(--starPurple);
+  color: white;
+  border: none;
+  border-radius: 16px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.nav-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(255, 209, 102, 0.6);
+}
+
+.nav-btn.active {
+  background: #FFD166;
+  color: #0B1C2D;
+  font-weight: bold;
+}
