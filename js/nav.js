@@ -1,7 +1,7 @@
 document.getElementById("navbar").innerHTML = `
   <nav id="navbar">
     <a class="nav-logo" href="/index.html">
-      AstroQuest
+      CosmicRae
     </a>
     <ul>
       <li>
