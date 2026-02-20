@@ -1,0 +1,70 @@
+/* CARDS */
+
+.card {
+  background: rgba(var(--blue-dark-rgb), 0.6);
+  border: 1px solid rgba(var(--white-rgb), 0.07);
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 0 30px rgba(var(--cyan-rgb), 0.08);
+}
+
+.card-explore {
+  border: 1px solid rgba(var(--purple-rgb), 0.4);
+  box-shadow:
+    0 0 30px rgba(var(--purple-rgb), 0.15),
+    inset 0 1px 0 rgba(var(--purple-rgb), 0.1);
+}
+
+.card-track {
+  border: 1px solid rgba(var(--green-rgb), 0.4);
+  box-shadow:
+    0 0 30px rgba(var(--green-rgb), 0.15),
+    inset 0 1px 0 rgba(var(--green-rgb), 0.1);
+}
+
+.card-discover {
+  border: 1px solid rgba(var(--gold-rgb), 0.4);
+  box-shadow:
+    0 0 30px rgba(var(--gold-rgb), 0.15),
+    inset 0 1px 0 rgba(var(--gold-rgb), 0.1);
+}
+
+.card-learn {
+  border: 1px solid rgba(var(--blue-rgb), 0.4);
+  box-shadow:
+    0 0 30px rgba(var(--blue-rgb), 0.15),
+    inset 0 1px 0 rgba(var(--blue-rgb), 0.1);
+}
+
+/* BADGES */
+
+.badge {
+  font-family: "Share Tech Mono";
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  padding: 2px 6px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.badge-explore {
+  background: rgba(var(--purple-rgb), 0.15);
+  border: 1px solid rgba(var(--purple-rgb), 0.3);
+  color: rgba(var(--purple-rgb), 0.9);
+}
+.badge-track {
+  background: rgba(var(--green-rgb), 0.15);
+  border: 1px solid rgba(var(--green-rgb), 0.3);
+  color: rgba(var(--green-rgb), 0.9);
+}
+.badge-discover {
+  background: rgba(var(--gold-rgb), 0.15);
+  border: 1px solid rgba(var(--gold-rgb), 0.3);
+  color: rgba(var(--gold-rgb), 0.9);
+}
+.badge-learn {
+  background: rgba(var(--blue-rgb), 0.15);
+  border: 1px solid rgba(var(--blue-rgb), 0.3);
+  color: rgba(var(--blue-rgb), 0.9);
+}
