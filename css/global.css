@@ -83,6 +83,7 @@ h6 {
   --blue-dark-rgb: 13, 27, 75;
   --white-rgb: 255, 255, 255;
   --cyan-rgb: 34, 211, 238;
+  --blue-bright-rgb: 37, 99, 235;
 }
 
 body {
@@ -94,12 +95,12 @@ body {
   background-image:
     radial-gradient(
       ellipse 60% 40% at 20% 10%,
-      rgba(37, 99, 235, 0.08) 0%,
+      rgba(var(--blue-bright-rgb), 0.08) 0%,
       transparent 70%
     ),
     radial-gradient(
       ellipse 40% 30% at 80% 80%,
-      rgba(168, 85, 247, 0.06) 0%,
+      rgba(var(--purple-rgb), 0.06) 0%,
       transparent 70%
     );
 }
@@ -124,6 +125,11 @@ h4 {
   font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
-#apod-title {
-  font-family: "Inter";
+.page-title {
+  padding: 15px;
+}
+
+main {
+  padding-bottom: 60px;
+  padding-right: 20px;
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Astro — APOD</title>
+    <title>CosmicRae — APOD</title>
     <link rel="stylesheet" href="../../css/global.css" />
     <link rel="stylesheet" href="../../css/nav.css" />
     <link rel="stylesheet" href="../../css/components.css" />
@@ -12,20 +12,21 @@
   <body>
     <div id="navbar"></div>
     <main>
-      <h1>Astronomy Picture of the Day!</h1>
+      <h2 class="page-title">Astronomy Picture of the Day!</h2>
+      <div class="apod-header">
+        <h3 id="apod-title"></h3>
+      </div>
 
-      <h2 id="apod-title"></h2>
-      <img id="apod-img" />
-      <p id="apod-date"></p>
-      <p id="apod-explanation"></p>
-      <p id="apod-copyright"></p>
-
-      <input
-        change="fetchData(value)"
-        id="apod-date-picker"
-        type="date"
-        min="1995-06-16"
-      />
+      <div class="apod-layout">
+        <div class="apod-img-panel">
+          <img id="apod-img" />
+        </div>
+        <div class="apod-content-panel card card-explore">
+          <input id="apod-date-picker" type="date" min="1995-06-16" />
+          <p id="apod-explanation"></p>
+          <p id="apod-copyright"></p>
+        </div>
+      </div>
     </main>
     <script src="../../js/nav.js"></script>
     <script src="../../js/api.js"></script>

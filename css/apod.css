@@ -1,0 +1,68 @@
+.apod-layout {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+}
+
+.apod-img-panel {
+  flex: 2;
+  min-width: 0;
+}
+
+.apod-content-panel {
+  flex: 1;
+  padding-right: 30px;
+  align-self: flex-start;
+}
+
+#apod-img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  max-height: 70vh;
+  object-fit: contain;
+  background: rgba(var(--blue-dark-rgb), 0.4);
+  border: 1px solid rgba(var(--white-rgb), 0.07);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+#apod-explanation {
+  padding: 20px 0;
+}
+
+#apod-date-picker {
+  background: rgba(var(--blue-dark-rgb), 0.8);
+  border: 1px solid rgba(var(--cyan-rgb), 0.4);
+  border-radius: 6px;
+  color: var(--white);
+  padding: 8px 12px;
+  font-family: "Share Tech Mono";
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  width: 40%;
+}
+
+#apod-date-picker:focus {
+  outline: none;
+  border-color: var(--cyan);
+  box-shadow: 0 0 10px rgba(var(--cyan-rgb), 0.2);
+}
+
+#apod-date-picker::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+#apod-title {
+  font-family: "Inter";
+  padding: 15px;
+  color: var(--purple);
+}
+
+#apod-copyright {
+  font-size: 12px;
+  color: var(--grey);
+}

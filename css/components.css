@@ -9,6 +9,7 @@
 }
 
 .card-explore {
+  background: rgba(var(--purple-rgb), 0.06);
   border: 1px solid rgba(var(--purple-rgb), 0.4);
   box-shadow:
     0 0 30px rgba(var(--purple-rgb), 0.15),
@@ -16,6 +17,7 @@
 }
 
 .card-track {
+  background: rgba(var(--green-rgb), 0.06);
   border: 1px solid rgba(var(--green-rgb), 0.4);
   box-shadow:
     0 0 30px rgba(var(--green-rgb), 0.15),
@@ -23,6 +25,7 @@
 }
 
 .card-discover {
+  background: rgba(var(--gold-rgb), 0.06);
   border: 1px solid rgba(var(--gold-rgb), 0.4);
   box-shadow:
     0 0 30px rgba(var(--gold-rgb), 0.15),
@@ -30,6 +33,7 @@
 }
 
 .card-learn {
+  background: rgba(var(--blue-rgb), 0.06);
   border: 1px solid rgba(var(--blue-rgb), 0.4);
   box-shadow:
     0 0 30px rgba(var(--blue-rgb), 0.15),

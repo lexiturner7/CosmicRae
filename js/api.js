@@ -37,10 +37,10 @@ async function fetchData(date) {
       }
     }
 
-    const apodDateElement = document.getElementById("apod-date");
-    if (apodDateElement) {
-      apodDateElement.textContent = apoddate;
-    }
+    // const apodDateElement = document.getElementById("apod-date");
+    // if (apodDateElement) {
+    //   apodDateElement.textContent = apoddate;
+    // }
   } catch (error) {
     console.error("Failed to fetch APOD data", error);
   }
