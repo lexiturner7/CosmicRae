@@ -1,38 +1,105 @@
-:root {
-  --deepSpaceBlue: #0B1C2D ;
-  --starPurple: #4B3F72;
-  --rocketYellow: #FFD166;
-  --planetTeal: #2EC4B6;
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap");
+
+/* css reset */
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
 }
 
-
+:root {
+  --black: #05070f;
+  --navy: #080e24;
+  --blue-dark: #0d1b4b;
+  --blue-mid: #1a3a7c;
+  --blue-bright: #2563eb;
+  --cyan: #22d3ee;
+  --gold: #f59e0b;
+  --white: #e8edf8;
+  --grey: #8899bb;
+  --green: #22c55e;
+  --purple: #a855f7;
+  --red: #ef4444;
+  --blue: #3b82f6;
+}
 
 body {
-    background-color: var(--deepSpaceBlue);
+  font-family: "Inter", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
 }
 
-header {
-    color: white;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Orbitron", sans-serif;
 }
 
-.nav-btn {
-  background: var(--starPurple);
-  color: white;
-  border: none;
-  border-radius: 16px;
-  padding: 8px 16px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
 }
-
-.nav-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 10px rgba(255, 209, 102, 0.6);
+h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
 }
-
-.nav-btn.active {
-  background: #FFD166;
-  color: #0B1C2D;
-  font-weight: bold;
+h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.75rem);
+}
+h4 {
+  font-size: clamp(1rem, 2vw, 1.25rem);
 }
