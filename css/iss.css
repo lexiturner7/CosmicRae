@@ -23,3 +23,46 @@
   padding-right: 30px;
   align-self: flex-start;
 }
+
+#iss-astros li {
+  list-style: none;
+  padding: 10px;
+  border-bottom: 1px solid rgba(var(--white-rgb), 0.07);
+  font-size: 14px;
+  color: var(--white);
+  letter-spacing: 0.05em;
+  display: block;
+}
+#iss-position li {
+  list-style: none;
+  padding: 8px;
+  font-family: "Share Tech Mono";
+  font-size: 13px;
+  color: var(--green);
+  letter-spacing: 0.05em;
+  display: block;
+}
+
+#iss-astros li:last-child {
+  border-bottom: none;
+}
+.iss-content-panel h4 {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 12px;
+  margin-top: 20px;
+}
+
+#iss-astros,
+#iss-position {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#iss-astros {
+  display: block;
+  margin-bottom: 24px;
+}
