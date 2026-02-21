@@ -1,0 +1,25 @@
+#iss-map {
+  height: 60vh;
+  border: 6px solid rgba(var(--green-rgb), 0.5);
+  border-radius: 10px;
+  box-shadow:
+    0 0 30px rgba(var(--green-rgb), 0.15),
+    inset 0 1px 0 rgba(var(--green-rgb), 0.1);
+}
+
+.iss-map-panel {
+  flex: 2;
+  min-width: 0;
+}
+
+.iss-layout {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+}
+
+.iss-content-panel {
+  flex: 1;
+  padding-right: 30px;
+  align-self: flex-start;
+}
