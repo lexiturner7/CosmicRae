@@ -8,10 +8,41 @@
     <link rel="stylesheet" href="../../css/nav.css" />
     <link rel="stylesheet" href="../../css/components.css" />
     <link rel="stylesheet" href="../../css/iss.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
   </head>
   <body>
     <div id="navbar"></div>
-    <main></main>
+    <main>
+      <h2 class="page-title">Where is the International Space Station?</h2>
+      <div class="iss-layout">
+        <div class="iss-map-panel">
+          <div id="iss-map"></div>
+        </div>
+        <div class="iss-content-panel card card-track">
+          <h4>Crew Aboard</h4>
+          <ul id="iss-astros">
+            <li>Loading crew...</li>
+          </ul>
+
+          <h4>Current Position</h4>
+          <ul id="iss-position">
+            <li id="iss-latitude">Loading...</li>
+            <li id="iss-longitude">Loading...</li>
+          </ul>
+        </div>
+      </div>
+    </main>
     <script src="../../js/nav.js"></script>
+    <script src="../../js/iss.js"></script>
   </body>
 </html>
