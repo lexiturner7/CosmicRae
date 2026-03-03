@@ -1,0 +1,195 @@
+{
+  "planets": [
+    {
+      "id": "mercury",
+      "name": "Mercury",
+      "color": "#b5b5b5",
+      "order": 1,
+      "image": "mercury.jpg",
+      "tagline": "The Speedy Little Planet",
+      "sections": {
+        "sizeAndDistance": "Mercury is the smallest planet in our solar system — only a little bigger than Earth's Moon! If Earth were the size of a nickel, Mercury would be about as big as a blueberry. It orbits really close to the Sun, about 36 million miles away, and sunlight only takes 3.2 minutes to travel from the Sun all the way to Mercury.",
+        "orbitAndRotation": "Mercury is the fastest planet in our solar system — it zooms around the Sun in just 88 Earth days! But it spins really slowly, so one full day on Mercury lasts 176 Earth days. That means a day on Mercury is longer than its whole year! Because of its wobbly path around the Sun, if you stood on Mercury you'd actually see the Sun rise, set, and then rise again!",
+        "moons": "Mercury has no moons at all. Scientists think this is because Mercury is so small and so close to the Sun that the Sun's gravity would have pulled any moons away long ago.",
+        "rings": "Mercury has no rings. Only the giant outer planets like Saturn, Jupiter, Uranus, and Neptune have ring systems.",
+        "formation": "Mercury formed about 4.5 billion years ago — that's way before dinosaurs, way before Earth had oceans, way before almost anything! It formed when gravity pulled together gas and dust swirling around the early Sun. Like Earth, it has a core, a mantle, and a crust.",
+        "structure": "Even though Mercury is small, it's surprisingly heavy for its size — it's the second densest planet after Earth! It has a huge iron core that takes up about 85% of the whole planet. Scientists think part of that core might still be liquid metal sloshing around inside.",
+        "surface": "Mercury's surface is covered in craters from asteroids and comets smashing into it billions of years ago — it looks a lot like our Moon! It also has giant cliffs hundreds of miles long that formed as the planet slowly cooled and shrank over billions of years. Most of the surface looks grayish-brown, but bright streaks called crater rays shoot out from some craters where fresh rock was blasted to the surface.",
+        "atmosphere": "Mercury doesn't really have a proper atmosphere like Earth does. Instead it has a super thin layer of gases called an exosphere, made of oxygen, sodium, hydrogen, helium, and potassium. Because there's no real atmosphere, there's nothing to trap heat — which is why Mercury gets scorching hot during the day and freezing cold at night.",
+        "potentialForLife": "Mercury is a really tough place for life. During the day it gets up to 800°F (430°C) — hot enough to melt lead! At night it drops to -290°F (-180°C). There might be water ice hiding in deep craters near the poles that never see sunlight, but even so, Mercury is probably too extreme for any life as we know it."
+      },
+      "funFact": "A day on Mercury is longer than its whole year! It takes just 88 Earth days to travel around the Sun, but 176 Earth days to complete one full day and night cycle."
+    },
+
+    {
+      "id": "venus",
+      "name": "Venus",
+      "color": "#e8cda0",
+      "order": 2,
+      "image": "venus.jpg",
+      "tagline": "Earth's Evil Twin",
+      "sections": {
+        "sizeAndDistance": "Venus is almost exactly the same size as Earth — like having a twin planet! It's about 67 million miles from the Sun, and it's the brightest object in our night sky after the Moon. Ancient people thought it was actually two different stars because sometimes you can see it in the morning and sometimes at night!",
+        "orbitAndRotation": "Venus is super weird when it comes to time. One day on Venus lasts 243 Earth days — longer than its whole year, which is only 225 Earth days! Even stranger, Venus spins backwards compared to most planets, so the Sun rises in the west and sets in the east. If you lived on Venus, birthdays would come before the next sunrise!",
+        "moons": "Venus has no moons, but it does have a special companion called Zoozve — an asteroid that follows Venus around the Sun like a buddy. The funny name actually came from a mistake! An artist misread '2002 VE' on a poster and wrote 'Zoozve' by accident, and the name stuck!",
+        "rings": "Venus has no rings. Only the giant outer planets like Saturn, Jupiter, Uranus, and Neptune have ring systems.",
+        "formation": "Venus and Earth were basically born together about 4.6 billion years ago from the same swirling cloud of gas and dust around the early Sun. They started out very similar — both had oceans and rocky surfaces. But somehow Venus ended up becoming a scorching inferno while Earth became a perfect home for life. Scientists study Venus to understand how two such similar planets ended up so different!",
+        "structure": "If you cut Venus and Earth in half and put them side by side they'd look almost identical! Both have an iron core in the middle, a thick rocky mantle around it, and a thin crust on the outside. Venus even has volcanoes just like Earth — some scientists think they might still be active today!",
+        "surface": "Venus has a wild landscape hidden under its thick clouds. It has giant mountains — one taller than Mount Everest — thousands of volcanoes, deep valleys, and strange flat-topped domes made from thick slow-moving lava. The Soviet Union actually landed spacecraft on Venus in the 1970s and 80s, but they only survived for about two hours before being destroyed by the extreme heat and pressure!",
+        "atmosphere": "Venus has the thickest, nastiest atmosphere of any rocky planet. It's mostly carbon dioxide which traps heat like a blanket — this is called the greenhouse effect, and on Venus it went completely out of control. The clouds are made of sulfuric acid, which is incredibly corrosive. This is why Venus is actually hotter than Mercury even though Mercury is closer to the Sun!",
+        "potentialForLife": "The surface of Venus is way too hot and harsh for life — around 900°F (475°C), hot enough to melt lead! But about 30 miles up in the atmosphere, temperatures cool down to something more comfortable. Some scientists think tiny microbes might possibly survive floating in Venus's clouds. It's a wild idea, but scientists spotted some mysterious dark streaks in the clouds that nobody can fully explain yet!"
+      },
+      "funFact": "Venus spins backwards compared to most planets! If you could stand on Venus, you'd watch the Sun rise in the west and set in the east — the complete opposite of Earth."
+    },
+
+    {
+      "id": "earth",
+      "name": "Earth",
+      "color": "#1a6ea8",
+      "order": 3,
+      "image": "earth.jpg",
+      "tagline": "Our Home in Space",
+      "featuredLink": {
+        "label": "Explore Earth in 3D",
+        "url": "https://eyes.nasa.gov/apps/earth"
+      },
+      "sections": {
+        "sizeAndDistance": "Earth is our home planet and the only place we know of in the entire universe with life on it! It's the fifth largest planet in the solar system and the biggest of the four rocky planets closest to the Sun. Earth is exactly one astronomical unit from the Sun — 93 million miles — and sunlight takes about 8 minutes to reach us.",
+        "orbitAndRotation": "Earth takes 365.25 days to travel around the Sun — that's one year! Because of that extra quarter day, every four years we add an extra day to our calendar called a leap day. Earth spins on a tilted axis, and that tilt is what gives us our four seasons. When your part of Earth leans toward the Sun you get summer, and when it leans away you get winter!",
+        "moons": "Earth has one moon — simply called the Moon! Our Moon is really special because it helps stabilize Earth's wobble, which keeps our climate more stable and predictable. The Moon was probably formed billions of years ago when a giant rock smashed into the early Earth and blasted a huge chunk into space — that chunk eventually clumped together to become our Moon. Fun size check: 30 Earths could fit in the space between Earth and the Moon!",
+        "rings": "Earth has no rings. Only the giant outer planets like Saturn, Jupiter, Uranus, and Neptune have ring systems.",
+        "formation": "Earth formed about 4.5 billion years ago when gravity pulled together gas and dust swirling around the early Sun. Over millions of years it cooled down, oceans formed, and about 3.8 billion years ago the first tiny living things appeared in those oceans. Everything alive today — every plant, animal, and person — descended from those first microscopic creatures!",
+        "structure": "Earth is like a giant layered ball! In the very center is a solid inner core of iron and nickel, as hot as the surface of the Sun. Around that is a liquid outer core of swirling iron and nickel — this moving liquid metal is what creates Earth's magnetic field, which protects us from harmful radiation from space. Then comes the thick mantle, which has the consistency of caramel, and finally the thin outer crust where we live.",
+        "surface": "Earth's surface is constantly moving and changing! The crust is broken into giant pieces called tectonic plates that slowly drift around — about as fast as your fingernails grow. When plates collide they make mountains, when they pull apart they create valleys and volcanoes, and when they grind past each other they cause earthquakes. About 71% of Earth's surface is covered by ocean, and most of Earth's volcanoes are actually hidden underwater!",
+        "atmosphere": "Earth's atmosphere is like an invisible protective blanket wrapped around our planet. It's made of 78% nitrogen and 21% oxygen — the oxygen is what we breathe! The atmosphere shields us from harmful radiation from the Sun, keeps our temperature comfortable, and burns up most meteoroids before they can hit the ground. Those burning meteoroids are what we see as shooting stars in the night sky!",
+        "potentialForLife": "Earth is the only planet we know of with life — and life is absolutely everywhere here! From the deepest ocean trenches to the highest mountain peaks, from scorching hot springs to freezing Antarctic ice, living things have found a way to survive almost everywhere on Earth. The key ingredients are liquid water, a stable temperature, and protection from harmful radiation — and Earth has all three!"
+      },
+      "funFact": "Earth is the only planet in our solar system not named after a Greek or Roman god. The name simply comes from an old Germanic word meaning 'the ground' — pretty humble for the only known home of life in the universe!"
+    },
+
+    {
+      "id": "mars",
+      "name": "Mars",
+      "color": "#c1440e",
+      "order": 4,
+      "image": "mars.jpg",
+      "tagline": "The Red Planet",
+      "featuredLink": {
+        "label": "Explore Mars in 3D",
+        "url": "https://eyes.nasa.gov/apps/solar-system/#/mars"
+      },
+      "sections": {
+        "sizeAndDistance": "Mars is about half the size of Earth — if Earth were a nickel, Mars would be about as big as a raspberry. It's 142 million miles from the Sun, and sunlight takes 13 minutes to get there. Mars is one of the most explored places in our entire solar system — we've sent more spacecraft to Mars than anywhere else!",
+        "orbitAndRotation": "A day on Mars is almost exactly like a day on Earth — just 24.6 hours, only 37 minutes longer than ours! Mars even has seasons like Earth because its axis is tilted at a similar angle. But since Mars takes 687 Earth days to orbit the Sun, each season lasts about twice as long as ours.",
+        "moons": "Mars has two tiny potato-shaped moons called Phobos and Deimos — named after the horses that pulled the chariot of the Greek god of war! Phobos is slowly spiraling toward Mars and will either crash into it or break apart into a ring in about 50 million years. Deimos is smoother and smaller, covered in loose dirt that fills in its craters.",
+        "rings": "Mars has no rings right now — but in about 50 million years when its moon Phobos crashes into Mars or breaks apart, it might create a dusty ring around the planet!",
+        "formation": "Mars formed about 4.5 billion years ago from swirling gas and dust around the early Sun. Scientists think Mars used to be much warmer and wetter, with rivers, lakes, and maybe even an ocean! Something happened billions of years ago that caused Mars to lose its thick atmosphere and most of its water.",
+        "structure": "Mars has a dense core of iron, nickel, and sulfur at its center, surrounded by a rocky mantle and a thin crust. The crust of Mars is thicker than Earth's — that's one reason Mars doesn't have moving tectonic plates like Earth does.",
+        "surface": "Mars has some of the most extreme landscapes in the whole solar system! It's home to Olympus Mons, the largest volcano anywhere — it's three times taller than Mount Everest and as wide as the state of Arizona. Mars also has Valles Marineris, a canyon so long it could stretch all the way across the United States — and it's 10 times deeper than the Grand Canyon! The red color comes from rusty iron dust covering the surface.",
+        "atmosphere": "Mars has a very thin atmosphere made mostly of carbon dioxide. The sky on Mars would look hazy and pinkish-red because of all the dust floating around — not blue like on Earth. Temperatures swing wildly from a pleasant 70°F (20°C) near the equator at noon to a brutal -225°F (-153°C) at night. Giant dust storms sometimes cover the entire planet for months!",
+        "potentialForLife": "Scientists don't think anything is living on Mars right now, but Mars might have had life billions of years ago when it was warmer and had liquid water on its surface. Today NASA rovers like Curiosity and Perseverance are exploring Mars looking for ancient signs of life preserved in rocks. We've even sent a helicopter to Mars — Ingenuity made the first powered flight on another planet!"
+      },
+      "funFact": "Mars is home to the biggest volcano in the entire solar system — Olympus Mons is so huge that if you stood at the base you wouldn't even be able to see the top because it disappears over the horizon!"
+    },
+
+    {
+      "id": "jupiter",
+      "name": "Jupiter",
+      "color": "#c88b3a",
+      "order": 5,
+      "image": "jupiter.jpg",
+      "tagline": "The King of Planets",
+      "featuredLink": {
+        "label": "Explore Jupiter in 3D",
+        "url": "https://eyes.nasa.gov/apps/solar-system/#/jupiter"
+      },
+      "sections": {
+        "sizeAndDistance": "Jupiter is absolutely massive — it's 11 times wider than Earth! If Earth were the size of a grape, Jupiter would be as big as a basketball. It's so big that all the other planets in the solar system could fit inside it with room to spare. Jupiter is 484 million miles from the Sun, and sunlight takes 43 minutes to reach it.",
+        "orbitAndRotation": "Even though Jupiter is the biggest planet, it spins faster than any other — one day on Jupiter is only 9.9 hours! But it takes 12 Earth years to complete one trip around the Sun. Jupiter spins so fast that it bulges out at its equator and is slightly squished at its poles.",
+        "moons": "Jupiter has 95 known moons — like its own mini solar system! The four biggest were discovered by the astronomer Galileo way back in 1610. Io is covered in hundreds of active volcanoes — it's the most volcanic place in the entire solar system! Ganymede is actually bigger than the planet Mercury. And Europa has a giant ocean of liquid water hidden under its icy surface — scientists think it might be one of the best places to look for alien life!",
+        "rings": "Jupiter actually has rings, but they're very faint and hard to see — nothing like Saturn's spectacular rings. They were discovered in 1979 by NASA's Voyager 1 spacecraft and are made of tiny dark dust particles kicked up when meteoroids crash into Jupiter's small inner moons.",
+        "formation": "Jupiter formed about 4.6 billion years ago and gobbled up most of the leftover material after the Sun formed — it has more than twice the mass of all the other planets combined! Jupiter has the same ingredients as a star — mostly hydrogen and helium — but it never got quite big enough to ignite and become one.",
+        "structure": "Jupiter doesn't have a solid surface — it's basically a giant ball of swirling gas and liquid! Deep inside, the pressure gets so intense that hydrogen is squeezed into a liquid metal that conducts electricity like a wire. This liquid metallic hydrogen spinning around inside Jupiter is what creates its incredibly powerful magnetic field — the strongest of any planet.",
+        "surface": "Jupiter has no solid surface to stand on — if you tried to land a spacecraft, it would just sink deeper and deeper into the planet until the crushing pressure destroyed it. What we see when we look at Jupiter are the tops of its cloud layers — beautiful swirling bands of orange, brown, yellow, and white made of ammonia ice and other chemicals.",
+        "atmosphere": "Jupiter's atmosphere is one of the most dramatic in the solar system. The colorful stripes are actually massive wind currents blowing in opposite directions at up to 335 mph! The most famous feature is the Great Red Spot — a storm that has been raging for over 300 years and is so big that two Earths could fit inside it. At Jupiter's poles, giant storms arrange themselves into perfect geometric shapes — eight in the north, five in the south!",
+        "potentialForLife": "Jupiter itself is way too extreme for life — crushing pressure, no solid surface, wild temperatures. But its moon Europa is one of the most exciting places in the solar system for finding life! Under Europa's icy crust is a vast ocean of liquid water that has been there for billions of years. NASA's Europa Clipper spacecraft launched in 2024 to find out if anything might be living in that hidden ocean!"
+      },
+      "funFact": "Jupiter's Great Red Spot is a storm that has been raging for over 300 years — and it's so massive that two entire Earths could fit inside it! Though scientists have noticed it's been slowly shrinking over the past few decades."
+    },
+
+    {
+      "id": "saturn",
+      "name": "Saturn",
+      "color": "#e4d191",
+      "order": 6,
+      "image": "saturn.jpg",
+      "tagline": "The Ringed Wonder",
+      "featuredLink": {
+        "label": "Explore Saturn in 3D",
+        "url": "https://eyes.nasa.gov/apps/solar-system/#/saturn"
+      },
+      "sections": {
+        "sizeAndDistance": "Saturn is the second biggest planet in our solar system — 9 times wider than Earth! If Earth were a nickel, Saturn would be about as big as a volleyball. It's 886 million miles from the Sun, so far away that sunlight takes 80 minutes to reach it. That's almost an hour and a half just for light to travel there!",
+        "orbitAndRotation": "Saturn spins really fast — one day is only 10.7 hours! But it takes a very long time to go around the Sun — one Saturn year lasts 29.4 Earth years. So if you lived on Saturn, you'd never even make it to your first birthday! Like Earth, Saturn has seasons because its axis is tilted at a similar angle to ours.",
+        "moons": "Saturn has 146 known moons — more than any other planet! Its biggest moon Titan is larger than the planet Mercury and has a thick orange atmosphere and lakes made of liquid methane — that's a gas on Earth but a liquid on super cold Titan. Another moon called Enceladus shoots giant geysers of water ice into space from cracks in its surface, and scientists think it has a warm ocean hidden underground that could possibly support life!",
+        "rings": "Saturn's rings are the most spectacular in the solar system — you can even see them through a small telescope from Earth! They stretch up to 175,000 miles wide but are only about 30 feet thick in most places — like a piece of paper compared to a football field. The rings are made of billions of chunks of ice and rock ranging from tiny grains to pieces as big as a house or even a mountain. They're thought to be pieces of old comets, asteroids, or shattered moons torn apart by Saturn's gravity.",
+        "formation": "Saturn formed about 4.5 billion years ago from swirling gas and dust, the same way Jupiter did. Like Jupiter, it's made mostly of hydrogen and helium — the same stuff the Sun is made of! Saturn settled into its current position in the outer solar system about 4 billion years ago.",
+        "structure": "Saturn is the only planet in our solar system that is less dense than water — meaning if you had a bathtub big enough, Saturn would actually float! It has a dense metal core surrounded by rock, then layers of liquid metallic hydrogen and regular liquid hydrogen, all wrapped in thick clouds of gas.",
+        "surface": "Like Jupiter, Saturn has no solid surface at all. It's just swirling gases and liquids all the way down, getting hotter and more pressurized the deeper you go. Any spacecraft trying to fly into Saturn would be crushed, melted, and vaporized before it got very far.",
+        "atmosphere": "Saturn's atmosphere has the fastest winds in the solar system — up to 1,600 feet per second, about four times stronger than the most powerful hurricanes on Earth! One of the strangest features is a massive six-sided storm at Saturn's north pole — a perfect hexagon shape so big that four Earths could fit inside it. Nothing else like it exists anywhere in the solar system!",
+        "potentialForLife": "Saturn itself is too extreme for life, but two of its moons are really exciting! Enceladus shoots water geysers into space from a hidden underground ocean — it has all the basic ingredients scientists look for when searching for life. Titan has a thick atmosphere and liquid on its surface, though it's made of methane instead of water. Scientists dream of one day sending a submarine to explore Titan's methane seas!"
+      },
+      "funFact": "Saturn is so light for its size that it would actually float in water! It's the only planet in our solar system less dense than water. Also its rings look huge from far away but are surprisingly thin — if Saturn's rings were shrunk to the size of a football field, they'd be thinner than a sheet of paper!"
+    },
+
+    {
+      "id": "uranus",
+      "name": "Uranus",
+      "color": "#7de8e8",
+      "order": 7,
+      "image": "uranus.jpg",
+      "tagline": "The Sideways Planet",
+      "featuredLink": {
+        "label": "Explore Uranus in 3D",
+        "url": "https://eyes.nasa.gov/apps/solar-system/#/uranus"
+      },
+      "sections": {
+        "sizeAndDistance": "Uranus is four times wider than Earth — if Earth were a nickel, Uranus would be about as big as a softball. It's incredibly far away at 1.8 billion miles from the Sun, so far that sunlight takes 2 hours and 40 minutes to reach it. That's so far away that we've only sent one spacecraft past it — Voyager 2 in 1986!",
+        "orbitAndRotation": "Uranus is the weirdest spinner in the solar system — it's tilted so far on its side that it basically rolls around the Sun like a bowling ball! Scientists think something the size of Earth crashed into Uranus billions of years ago and knocked it sideways. Because of this extreme tilt, each pole gets 42 years of continuous sunlight followed by 42 years of total darkness. One day on Uranus is 17 hours, but one year takes 84 Earth years!",
+        "moons": "Uranus has 28 known moons, and they all have something really unique — they're named after characters from the plays of William Shakespeare and the poems of Alexander Pope instead of Greek and Roman myths like most other moons! Some of the cool names include Titania, Oberon, Miranda, Ariel, and Puck — all characters from Shakespeare's A Midsummer Night's Dream.",
+        "rings": "Uranus has 13 rings but they're very faint and dark — nothing like Saturn's bright icy rings. They come in two sets and are made of dark grey particles. One of the outer rings is actually blue, and another is reddish — scientists are still figuring out exactly what they're made of.",
+        "formation": "Uranus formed about 4.5 billion years ago from swirling gas and dust like the other planets. Scientists think Uranus originally formed closer to the Sun and then slowly migrated outward to its current position in the outer solar system about 4 billion years ago.",
+        "structure": "Uranus is called an ice giant because most of its insides are made of a hot slushy mix of water, methane, and ammonia ice — not regular ice like in your freezer, but exotic forms created by intense pressure. It has a small rocky core at the center that reaches temperatures of 9,000°F. Despite being called an ice giant it's actually quite hot inside!",
+        "surface": "Like Jupiter and Saturn, Uranus has no solid surface — it's all swirling fluids and gases that get denser and hotter the deeper you go. Any spacecraft trying to descend into Uranus would be crushed and destroyed by the extreme pressure before reaching the core.",
+        "atmosphere": "Uranus gets its beautiful blue-green color from methane gas in its atmosphere — the methane absorbs red light and reflects blue-green light back to our eyes. Its atmosphere is mostly hydrogen and helium with some methane. Wind speeds can reach 560 miles per hour — faster than the strongest tornadoes on Earth! Uranus also holds the record for the coldest planetary atmosphere in the solar system, dropping to -224°C (-371°F).",
+        "potentialForLife": "Uranus is too cold, too windy, and too extreme for life as we know it. Unlike Jupiter and Saturn whose moons are exciting places for potential life, Uranus's moons are mostly icy and rocky with no known underground oceans yet. Scientists would love to send a mission to study Uranus more closely — it's one of the least explored planets!"
+      },
+      "funFact": "Uranus spins completely on its side — its north and south poles are where most planets have their equators! This means that for 42 years one pole faces the Sun in constant daylight while the other is in total darkness, then they switch for the next 42 years."
+    },
+
+    {
+      "id": "neptune",
+      "name": "Neptune",
+      "color": "#3f54ba",
+      "order": 8,
+      "image": "neptune.jpg",
+      "tagline": "The Windiest World",
+      "featuredLink": {
+        "label": "Explore Neptune in 3D",
+        "url": "https://eyes.nasa.gov/apps/solar-system/#/neptune"
+      },
+      "sections": {
+        "sizeAndDistance": "Neptune is about four times wider than Earth — if Earth were a nickel, Neptune would be about as big as a baseball. It's the farthest planet from the Sun at a whopping 2.8 billion miles away, so far that sunlight takes 4 hours to reach it. Neptune is so distant that even at high noon it would look like dim twilight — the Sun appears 900 times dimmer there than it does on Earth!",
+        "orbitAndRotation": "One day on Neptune is about 16 hours, but one year lasts 165 Earth years — so Neptune has only completed one full orbit since it was discovered in 1846! Like Earth, Neptune has seasons because its axis is tilted at a similar angle, but each season lasts over 40 years. Sometimes Pluto actually gets closer to the Sun than Neptune for about 20 years at a time — that last happened from 1979 to 1999!",
+        "moons": "Neptune has 16 known moons, all named after sea gods and nymphs from Greek mythology. Its largest moon Triton is one of the most fascinating in the solar system — it orbits Neptune backwards compared to all other large moons, which makes scientists think Neptune captured it from somewhere else in the solar system long ago. Even though Triton is incredibly cold at -391°F, it shoots geysers of icy material miles up into space!",
+        "rings": "Neptune has five main rings, all named after the astronomers who studied Neptune. The rings have some really mysterious clumps of material called arcs that bunch together instead of spreading out evenly — scientists think the gravity of a nearby moon keeps them bunched up. The rings are thought to be relatively young and won't last forever.",
+        "formation": "Neptune formed about 4.5 billion years ago from swirling gas and dust, the same way as the other planets. Like Uranus, Neptune probably formed closer to the Sun and then slowly drifted outward to its current position at the edge of our solar system about 4 billion years ago.",
+        "structure": "Neptune is the other ice giant alongside Uranus. Most of its insides are made of a hot slushy mix of water, methane, and ammonia under incredible pressure, surrounding a rocky core about the same mass as Earth. Scientists think there might even be an ocean of super hot water deep inside Neptune that doesn't boil away because the pressure is so intense it keeps it trapped as liquid!",
+        "surface": "Neptune has no solid surface — like the other giant planets it's all gases and liquids that get denser as you go deeper. Its beautiful deep blue color comes from methane in the atmosphere absorbing red light and reflecting blue light back into space.",
+        "atmosphere": "Neptune is the windiest planet in the entire solar system — its winds reach over 1,200 miles per hour, nine times stronger than the most powerful winds on Earth and three times stronger than Jupiter's! These hurricane-force winds whip frozen methane clouds around the planet at incredible speeds. In 1989 scientists spotted a giant storm called the Great Dark Spot big enough to swallow the entire Earth — but by 1994 it had completely disappeared, and new storms have appeared in different places since.",
+        "potentialForLife": "Neptune is far too cold, windy, and extreme for life as we know it. At over 2.8 billion miles from the Sun with temperatures around -330°F (-201°C), it's one of the most hostile environments in our solar system. Unlike Jupiter and Saturn, Neptune's moons haven't shown strong signs of underground oceans yet — though Triton with its geysers is always interesting to scientists!"
+      },
+      "funFact": "Neptune has the strongest winds in the entire solar system — over 1,200 miles per hour! That's fast enough to travel from New York to Los Angeles in less than 3 minutes. And despite being so far from the Sun with very little heat, scientists still don't fully understand what powers these incredible winds."
+    }
+  ]
+}
