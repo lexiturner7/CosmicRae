@@ -1,5 +1,5 @@
 document.getElementById("navbar").innerHTML = `
-  <nav id="navbar">
+  <nav>
     <a class="nav-logo" href="/index.html">
       CosmicRae
     </a>
