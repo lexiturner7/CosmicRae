@@ -66,3 +66,11 @@
   display: block;
   margin-bottom: 24px;
 }
+
+#navbar ul li #tracknav {
+  color: var(--cyan);
+}
+
+.page-title {
+  color: rgba(var(--green-rgb));
+}

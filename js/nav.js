@@ -1,20 +1,20 @@
 document.getElementById("navbar").innerHTML = `
-  <nav id="navbar">
+  <nav>
     <a class="nav-logo" href="/index.html">
       CosmicRae
     </a>
     <ul>
       <li>
-        <a href="/pages/explore/explore.html">Explore</a>
+        <a href="/pages/explore/explore.html" id="explorenav">Explore</a>
       </li>
       <li>
-        <a href="/pages/track/track.html">Track</a>
+        <a href="/pages/track/track.html" id="tracknav">Track</a>
       </li>
       <li>
-        <a href="/pages/discover/discover.html">Discover</a>
+        <a href="/pages/discover/discover.html" id="discovernav">Discover</a>
       </li>
       <li>
-        <a href="/pages/learn/learn.html">Learn</a>
+        <a href="/pages/learn/learn.html" id="learnnav">Learn</a>
       </li>
     </ul>
   </nav>`;
