@@ -7,6 +7,10 @@
       "order": 1,
       "image": "mercury.jpg",
       "tagline": "The Speedy Little Planet",
+      "featuredLink": {
+        "label": "Explore Mercury in 3D",
+        "url": "https://eyes.nasa.gov/apps/solar-system/#/mercury"
+      },
       "sections": {
         "sizeAndDistance": {
           "title": "Size and Distance",
@@ -55,6 +59,10 @@
       "order": 2,
       "image": "venus.jpg",
       "tagline": "Earth's Evil Twin",
+      "featuredLink": {
+        "label": "Explore Venus in 3D",
+        "url": "https://eyes.nasa.gov/apps/solar-system/#/venus"
+      },
       "sections": {
         "sizeAndDistance": {
           "title": "Size and Distance",

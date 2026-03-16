@@ -29,6 +29,16 @@ async function getPlanetDataByID() {
 
     const sectionsContainer = document.getElementById("planet-sections");
 
+    if (planet.featuredLink) {
+      const featuredLinkContainer = document.getElementById(
+        "planet-featured-link",
+      );
+      const iframe = document.createElement("iframe");
+      iframe.src = planet.featuredLink.url;
+      iframe.allowFullscreen = true;
+      featuredLinkContainer.appendChild(iframe);
+    }
+
     Object.entries(planet.sections).forEach(([key, value]) => {
       const jumpLink = document.createElement("a");
       jumpLink.href = `#${key}`;

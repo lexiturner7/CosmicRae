@@ -79,7 +79,7 @@
   border-radius: 6px;
   padding: 6px 14px;
   font-family: "Share Tech Mono";
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.08em;
   color: var(--gold);
   text-transform: uppercase;
@@ -102,7 +102,7 @@
   border-radius: 10px;
   padding: 24px;
   box-shadow: 0 0 30px rgba(var(--gold-rgb), 0.06);
-  scroll-margin-top: 271px;
+  scroll-margin-top: 274px;
 }
 
 #planet-sections h2 {
@@ -119,14 +119,14 @@
   display: flex;
   align-items: center;
   gap: 60px;
-  padding: 40px 48px 20px;
+  padding: 40px 100px 20px;
 }
 
 #planet-intro {
   flex: 1;
   text-align: left;
   padding: 20px 0;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 #planet-image {
@@ -156,4 +156,17 @@
 #planet-funfact {
   font-size: 18px;
   color: var(--grey);
+}
+
+/* ************ 3D NASA PLANET ********* */
+
+#planet-featured-link {
+  display: flex;
+  justify-content: center;
+  padding: 0 24px;
+}
+
+#planet-featured-link iframe {
+  width: 80%;
+  height: 68vh;
 }
