@@ -62,7 +62,7 @@
 #apod-title {
   font-family: "Inter";
   padding: 15px;
-  color: var(--purple);
+  color: var(--white);
 }
 
 #apod-copyright {
@@ -72,4 +72,8 @@
 
 #navbar ul li #explorenav {
   color: var(--cyan);
+}
+
+.page-title {
+  color: rgba(var(--purple-rgb));
 }

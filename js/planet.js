@@ -27,11 +27,25 @@ async function getPlanetDataByID() {
     const planetFunFact = document.getElementById("planet-funfact");
     planetFunFact.textContent = `${planet.funFact}`;
 
+    const sectionsContainer = document.getElementById("planet-sections");
+
     Object.entries(planet.sections).forEach(([key, value]) => {
-      const planetSize = document.createElement("a");
-      planetSize.href = `#${key}`;
-      planetSize.textContent = key;
-      planetJumpLinks.appendChild(planetSize);
+      const jumpLink = document.createElement("a");
+      jumpLink.href = `#${key}`;
+      jumpLink.textContent = value.title;
+      planetJumpLinks.appendChild(jumpLink);
+
+      const planetSection = document.createElement("section");
+      planetSection.id = key;
+      sectionsContainer.appendChild(planetSection);
+
+      const sectionTitle = document.createElement("h2");
+      sectionTitle.textContent = value.title;
+      planetSection.appendChild(sectionTitle);
+
+      const sectionContent = document.createElement("p");
+      sectionContent.textContent = value.content;
+      planetSection.appendChild(sectionContent);
     });
   } catch (error) {
     console.error("Something went wrong:", error);
