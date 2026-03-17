@@ -11,12 +11,44 @@
   </head>
   <body>
     <div id="navbar"></div>
+    <div id="stars-layer"></div>
     <main>
-      <h2>Links:</h2>
-      <h3>
-        <a href="/pages/explore/apod.html">Astronomy Picture of the Day</a>
-      </h3>
+      <!-- ********* HERO SECTION ********* -->
+      <section id="explore-hero-section">
+        <div id="explore-stars"></div>
+
+        <div id="explore-headline">
+          <div id="headline-first">
+            The Universe <span id="awaits">Awaits!</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ********* CARDS ********* -->
+      <section id="explore-cards">
+        <a href="apod.html" class="card card-explore explore-card">
+          <div class="explore-card-header">
+            <h3>Astronomy Picture of the Day</h3>
+          </div>
+          <p>NASA photo of the day</p>
+        </a>
+
+        <a href="gallery.html" class="card card-explore explore-card">
+          <div class="explore-card-header">
+            <h3>NASA Image Gallery</h3>
+          </div>
+          <p>NASA image search</p>
+        </a>
+
+        <a href="news.html" class="card card-explore explore-card">
+          <div class="explore-card-header">
+            <h3>Space News</h3>
+          </div>
+          <p>Space news</p>
+        </a>
+      </section>
     </main>
     <script src="../../js/nav.js"></script>
+    <script src="../../js/explore.js"></script>
   </body>
 </html>

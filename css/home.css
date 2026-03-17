@@ -82,7 +82,7 @@
 /* ********* CARDS SECTION ********** */
 
 #home-cards {
-  background: var(--navy);
+  /* background: var(--navy); */
   padding: 40px 24px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
