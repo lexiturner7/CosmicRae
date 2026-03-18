@@ -28,3 +28,29 @@
 #planets-grid .card:hover {
   box-shadow: 0 0 20px rgba(var(--gold-rgb), 0.5);
 }
+
+/* ***************** STAR BG ***************** */
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 3s infinite;
+}
+
+#stars-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}

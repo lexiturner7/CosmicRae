@@ -1,3 +1,13 @@
+// Function to turn the sign on
+function turnLiveOn() {
+  const sign = document.getElementById("liveSign");
+  sign.classList.remove("off");
+  sign.classList.add("on");
+}
+
+// Example: Turn on after .5 seconds
+setTimeout(turnLiveOn, 500);
+
 // ******************** TWINKLING STARS BG ********************
 const exploreStars = document.getElementById("stars-layer");
 

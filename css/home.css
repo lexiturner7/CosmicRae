@@ -1,7 +1,10 @@
+nav {
+  background: transparent;
+}
+
 /* ********* HERO SECTION ********** */
 
 #home-hero-section {
-  background: var(--black);
   min-height: 52vh;
   display: flex;
   flex-direction: column;
