@@ -1,6 +1,10 @@
 nav {
   background: transparent;
 }
+#navbar ul li #tracknav {
+  color: var(--green);
+  font-weight: bold;
+}
 
 #track-hero-section {
   min-height: 45vh;

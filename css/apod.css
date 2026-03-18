@@ -71,7 +71,8 @@
 }
 
 #navbar ul li #explorenav {
-  color: var(--cyan);
+  color: var(--purple);
+  font-weight: bold;
 }
 
 .page-title {

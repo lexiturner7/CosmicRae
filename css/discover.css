@@ -2,6 +2,10 @@ nav {
   background: transparent;
 }
 
+#navbar ul li #discovernav {
+  color: var(--gold);
+  font-weight: bold;
+}
 #discover-hero-section {
   min-height: 45vh;
   display: flex;

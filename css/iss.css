@@ -68,7 +68,8 @@
 }
 
 #navbar ul li #tracknav {
-  color: var(--cyan);
+  color: var(--green);
+  font-weight: bold;
 }
 
 .page-title {

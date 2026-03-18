@@ -2,6 +2,11 @@ nav {
   background: transparent;
 }
 
+#navbar ul li #homenav {
+  color: var(--white);
+  font-weight: bold;
+}
+
 /* ********* HERO SECTION ********** */
 
 #home-hero-section {

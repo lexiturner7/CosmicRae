@@ -4,6 +4,9 @@ document.getElementById("navbar").innerHTML = `
       CosmicRae
     </a>
     <ul>
+    <li>
+        <a href="/index.html" id="homenav">Home</a>
+      </li>
       <li>
         <a href="/pages/explore/explore.html" id="explorenav">Explore</a>
       </li>

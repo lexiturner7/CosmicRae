@@ -1,3 +1,12 @@
+nav {
+  background: transparent;
+}
+
+#navbar ul li #discovernav {
+  color: var(--gold);
+  font-weight: bold;
+}
+
 #planets-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -19,10 +28,6 @@
 #planets-grid .card p {
   color: var(--grey);
   font-weight: bold;
-}
-
-#navbar ul li #discovernav {
-  color: var(--cyan);
 }
 
 #planets-grid .card:hover {
