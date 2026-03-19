@@ -18,8 +18,8 @@ async function getPlanetDataByID() {
     const planetName = document.getElementById("planet-name");
     planetName.textContent = `${planet.name}`;
 
-    const planetImage = document.getElementById("planet-image");
-    planetImage.src = `../../assets/images/${planet.image}`;
+    const planetModel = document.getElementById("model");
+    planetModel.src = `../../assets/3d/${planet.name}.glb`;
 
     const planetTagline = document.getElementById("planet-tagline");
     planetTagline.textContent = `${planet.tagline}`;
