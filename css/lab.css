@@ -1,0 +1,156 @@
+nav {
+  background: transparent;
+}
+
+#navbar ul li #labnav {
+  color: var(--cyan);
+  font-weight: bold;
+}
+#lab-hero-section {
+  min-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 3s infinite;
+}
+
+#stars-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ********* HEADLINE ********** */
+
+#lab-headline {
+  font-family: Orbitron;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+}
+
+#headline-first {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+#knowledge {
+  color: var(--cyan);
+  opacity: 0%;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+#your {
+  color: var(--white);
+  opacity: 0%;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+}
+
+/* ********* CARDS SECTION ********** */
+
+#lab-cards {
+  padding: 40px 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.lab-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+  transition: transform 0.2s;
+  background: rgba(var(--blue-dark-rgb), 0.4);
+}
+
+.lab-card-header {
+  display: flex;
+  color: var(--cyan);
+  align-items: center;
+  gap: 20px;
+}
+
+.lab-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(var(--cyan-rgb), 0.5);
+}
+
+.lab-card h3 {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.lab-card p {
+  font-size: 1rem;
+  color: var(--grey);
+  line-height: 1.6;
+}
+
+/* ************** ANIMATIONS **************** */
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
