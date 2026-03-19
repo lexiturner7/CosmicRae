@@ -6,15 +6,103 @@
     <title>CosmicRae</title>
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/component.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/home.css" />
   </head>
 
   <body>
     <div id="navbar"></div>
-
+    <div id="home-stars"></div>
     <main>
-      <!-- page content goes here -->
+      <!-- ********* HERO SECTION ********* -->
+      <section id="home-hero-section">
+        <div id="home-planets-row"></div>
+
+        <div id="home-headline">
+          <div id="headline-first">
+            Space is <span id="awesome">awesome.</span>
+          </div>
+          <div id="headline-second">
+            Let's
+            <span id="explore" style="color: var(--purple)">explore</span> it!
+          </div>
+        </div>
+
+        <div id="home-tagline">
+          Track space events live, explore every planet, and discover the
+          universe!<br />Built for curious kids who
+          <span style="color: var(--cyan); font-weight: bold">love</span>
+          space.
+        </div>
+      </section>
+      <!-- ********* CARDS ********* -->
+      <section id="home-cards">
+        <!-- ********* EXPLORE CARD ********* -->
+        <a
+          href="pages/explore/explore.html"
+          class="card card-explore home-card"
+        >
+          <div class="home-card-header">
+            <h3>Explore</h3>
+            <div class="home-card-emoji">🔭</div>
+          </div>
+          <p>NASA photo of the day, image gallery, space news</p>
+        </a>
+
+        <!-- ********* TRACK CARD ********* -->
+        <a href="pages/track/track.html" class="card card-track home-card">
+          <div class="home-card-header">
+            <h3>Track</h3>
+            <div class="home-card-emoji">🛰️</div>
+          </div>
+          <p>Live ISS location, rocket launches, asteroid tracker</p>
+        </a>
+
+        <!-- ********* DISCOVER CARD ********* -->
+
+        <a
+          href="pages/discover/discover.html"
+          class="card card-discover home-card"
+        >
+          <div class="home-card-header">
+            <h3>Discover</h3>
+            <div class="home-card-emoji">🪐</div>
+          </div>
+          <p>Planet encyclopedia, astronaut hall of fame</p>
+        </a>
+
+        <!-- ********* LAB CARD ********* -->
+        <a href="pages/learn/learn.html" class="card card-learn home-card">
+          <div class="home-card-header">
+            <h3>Lab</h3>
+            <div class="home-card-emoji">🚀</div>
+          </div>
+          <p>Space quiz, moon phases, cosmic facts</p>
+        </a>
+      </section>
+
+      <!-- ********* ABOUT / FUN FACT ********* -->
+      <section id="fun-about">
+        <div id="home-about">
+          <p class="home-section-label" style="color: var(--cyan)">
+            About CosmicRae
+          </p>
+          <p class="home-section-text">
+            Built for Rae — a curious 9-year-old who loves space. Every page
+            combines real NASA data with kid-friendly design, from live ISS
+            tracking to a full planet encyclopedia. Because
+            <span style="color: var(--white)">
+              the universe is for everyone.</span
+            >
+          </p>
+        </div>
+        <div id="home-funfact">
+          <p class="home-section-label" style="color: var(--gold)">Fun Fact!</p>
+          <p id="home-funfact-text" class="home-section-text"></p>
+        </div>
+      </section>
     </main>
     <script src="js/nav.js"></script>
+    <script src="js/home.js"></script>
   </body>
 </html>

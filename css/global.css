@@ -84,6 +84,7 @@ h6 {
   --white-rgb: 255, 255, 255;
   --cyan-rgb: 34, 211, 238;
   --blue-bright-rgb: 37, 99, 235;
+  --black-rgb: 5, 7, 15;
 }
 
 body {
@@ -132,6 +133,8 @@ h4 {
 main {
   padding-bottom: 60px;
   padding-right: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 a {

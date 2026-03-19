@@ -12,10 +12,54 @@
   <body>
     <div id="navbar"></div>
     <main>
-      <h3>
-        <a href="/pages/discover/planets.html">Learn About Planets!</a>
-      </h3>
+      <div id="stars-layer"></div>
+      <canvas id="discover-canvas"></canvas>
+      <!-- ********* HERO SECTION ********* -->
+      <section id="discover-hero-section">
+        <div id="discover-stars"></div>
+
+        <div id="discover-headline">
+          <div id="headline-first">
+            Discover <span id="the">the </span><span id="cosmos">Cosmos!</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ********* CARDS ********* -->
+      <section id="discover-cards">
+        <a href="planets.html" class="card card-discover discover-card">
+          <div class="discover-card-header">
+            <h3>Planets</h3>
+          </div>
+          <p>Planets</p>
+        </a>
+
+        <a href="astronauts.html" class="card card-discover discover-card">
+          <div class="discover-card-header">
+            <h3>Astronauts</h3>
+          </div>
+          <p>Astronauts</p>
+        </a>
+
+        <a href="issinfo.html" class="card card-discover discover-card">
+          <div class="discover-card-header">
+            <h3>
+              The International Space Station (
+              <span style="color: var(--white)">ISS</span> )
+            </h3>
+          </div>
+          <p>Learn more about the International Space Station</p>
+        </a>
+
+        <a href="constellations.html" class="card card-discover discover-card">
+          <div class="discover-card-header">
+            <h3>Constellations</h3>
+          </div>
+          <p>Learn more about constellations</p>
+        </a>
+      </section>
     </main>
     <script src="../../js/nav.js"></script>
+    <script src="../../js/discover.js"></script>
   </body>
 </html>

@@ -11,12 +11,51 @@
   </head>
   <body>
     <div id="navbar"></div>
+    <div id="stars-layer"></div>
     <main>
-      <h2>Links:</h2>
-      <h3>
-        <a href="/pages/explore/apod.html">Astronomy Picture of the Day</a>
-      </h3>
+      <!-- ********* HERO SECTION ********* -->
+      <section id="explore-hero-section">
+        <div id="explore-stars"></div>
+
+        <div id="explore-headline">
+          <div id="headline-first">
+            The Universe <span id="awaits">Awaits!</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ********* CARDS ********* -->
+      <section id="explore-cards">
+        <a href="timeline.html" class="card card-explore explore-card">
+          <div class="explore-card-header">
+            <h3>Space Timeline</h3>
+          </div>
+          <p>Timeline of the history of space!</p>
+        </a>
+
+        <a href="apod.html" class="card card-explore explore-card">
+          <div class="explore-card-header">
+            <h3>Astronomy Picture of the Day</h3>
+          </div>
+          <p>NASA photo of the day</p>
+        </a>
+
+        <a href="mrovergallery.html" class="card card-explore explore-card">
+          <div class="explore-card-header">
+            <h3>Mars Rover Gallery</h3>
+          </div>
+          <p>Photos taken from the Mars rover!</p>
+        </a>
+
+        <a href="news.html" class="card card-explore explore-card">
+          <div class="explore-card-header">
+            <h3>Space News</h3>
+          </div>
+          <p>Space news</p>
+        </a>
+      </section>
     </main>
     <script src="../../js/nav.js"></script>
+    <script src="../../js/explore.js"></script>
   </body>
 </html>

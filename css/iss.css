@@ -68,9 +68,36 @@
 }
 
 #navbar ul li #tracknav {
-  color: var(--cyan);
+  color: var(--green);
+  font-weight: bold;
 }
 
 .page-title {
   color: rgba(var(--green-rgb));
+}
+
+/* ***************** STAR BG ***************** */
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 3s infinite;
+}
+
+#stars-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
 }

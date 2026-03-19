@@ -1,0 +1,215 @@
+nav {
+  background: transparent;
+}
+#navbar ul li #tracknav {
+  color: var(--green);
+  font-weight: bold;
+}
+
+#track-hero-section {
+  min-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 3s infinite;
+}
+
+#stars-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ********* HEADLINE ********** */
+
+#track-headline {
+  font-family: Orbitron;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 45px;
+}
+
+#space {
+  color: var(--green);
+  opacity: 0%;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 1.25s;
+  animation-fill-mode: forwards;
+}
+
+#from {
+  color: var(--white);
+  opacity: 0%;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 1.25s;
+  animation-fill-mode: forwards;
+}
+
+/* ********* CARDS SECTION ********** */
+
+#track-cards {
+  padding: 40px 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.track-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.track-card-header {
+  display: flex;
+  color: var(--green);
+  align-items: center;
+  gap: 20px;
+}
+
+.track-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 0 20px var(--green),
+    0.5;
+}
+
+.track-card h3 {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.track-card p {
+  font-size: 1rem;
+  color: var(--grey);
+  line-height: 1.6;
+}
+
+/* ************** LIVE SIGN *************** */
+
+.live-sign {
+  font-family: Orbitron;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #222;
+  transition: all 0.3s ease;
+  /* Hidden state */
+  opacity: 0.5;
+  text-shadow: none;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Turn On State */
+.live-sign.on {
+  opacity: 1;
+  background-color: #ea2429;
+  animation:
+    neonPulse 1.5s infinite alternate,
+    turnOn 0.5s ease-out;
+  box-shadow:
+    0 0 10px #ea2429,
+    0 0 20px #ea2429,
+    0 0 40px #ea2429;
+}
+
+/* ************** ANIMATIONS **************** */
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Flicker effect */
+@keyframes neonPulse {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+/* Initial "On" zoom/flicker */
+@keyframes turnOn {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

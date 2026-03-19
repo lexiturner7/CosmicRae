@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../css/planet.css" />
   </head>
   <body>
-    <div id="navbar"></div>
+    <div id="stars-layer"></div>
 
     <div id="planet-navbar">
       <a id="mercury-nav" href="planet.html?id=mercury">
@@ -47,8 +47,9 @@
       </a>
     </div>
 
+    <div id="navbar"></div>
+
     <main>
-      <nav id="planet-jump-links"></nav>
       <div id="planet-hero">
         <div id="planet-hero-layout">
           <div id="planet-intro">
@@ -56,15 +57,43 @@
             <p id="planet-tagline"></p>
             <p id="planet-funfact"></p>
           </div>
-          <div id="planet-image-container">
-            <img id="planet-image" />
+          <div id="planet-model-container">
+            <!-- changed this from image to 3d model -->
+            <model-viewer
+              id="model"
+              alt="3D model of a NASA asset"
+              auto-rotate
+              camera-controls
+              shadow-intensity="1"
+              style="width: 70%; height: 500px"
+            >
+            </model-viewer>
           </div>
         </div>
       </div>
+      <nav id="planet-jump-links">
+        <span
+          style="
+            color: var(--grey);
+            display: flex;
+            padding-right: 20px;
+            align-items: center;
+          "
+          >Jump to ->
+        </span>
+      </nav>
+      <h2 id="eotss">NASA's Eyes on the Solar System</h2>
       <div id="planet-featured-link"></div>
       <div id="planet-sections"></div>
+      <div id="back-to-top">
+        <a href="#">Back to Top ↑</a>
+      </div>
     </main>
     <script src="../../js/nav.js"></script>
     <script src="../../js/planet.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
   </body>
 </html>

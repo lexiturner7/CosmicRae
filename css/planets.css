@@ -1,6 +1,15 @@
+nav {
+  background: transparent;
+}
+
+#navbar ul li #discovernav {
+  color: var(--gold);
+  font-weight: bold;
+}
+
 #planets-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   padding: 20px;
   gap: 20px;
 }
@@ -21,6 +30,32 @@
   font-weight: bold;
 }
 
-#navbar ul li #discovernav {
-  color: var(--cyan);
+#planets-grid .card:hover {
+  box-shadow: 0 0 20px rgba(var(--gold-rgb), 0.5);
+}
+
+/* ***************** STAR BG ***************** */
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 3s infinite;
+}
+
+#stars-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
 }

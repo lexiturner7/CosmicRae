@@ -12,10 +12,46 @@
   <body>
     <div id="navbar"></div>
     <main>
-      <h3>
-        <a href="/pages/track/iss.html">Track the ISS!</a>
-      </h3>
+      <div id="stars-layer"></div>
+      <section id="track-hero-section">
+        <div id="track-headline">
+          <div id="liveSign" class="live-sign off">LIVE</div>
+          <div><span id="from">from </span><span id="space">Space!</span></div>
+        </div>
+      </section>
+
+      <!-- ********* CARDS ********* -->
+      <section id="track-cards">
+        <a href="iss.html" class="card card-track track-card">
+          <div class="track-card-header">
+            <h3>ISS</h3>
+          </div>
+          <p>Track the ISS</p>
+        </a>
+
+        <a href="asteroids.html" class="card card-track track-card">
+          <div class="track-card-header">
+            <h3>Asteroids</h3>
+          </div>
+          <p>Track asteroids</p>
+        </a>
+
+        <a href="voyager.html" class="card card-track track-card">
+          <div class="track-card-header">
+            <h3>Voyager</h3>
+          </div>
+          <p>Where is Voyager now?</p>
+        </a>
+
+        <a href="launches.html" class="card card-track track-card">
+          <div class="track-card-header">
+            <h3>Launches</h3>
+          </div>
+          <p>Live track NASA launches!</p>
+        </a>
+      </section>
     </main>
     <script src="../../js/nav.js"></script>
+    <script src="../../js/track.js"></script>
   </body>
 </html>

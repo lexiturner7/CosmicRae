@@ -1,0 +1,232 @@
+nav {
+  background: transparent;
+}
+
+#navbar ul li #homenav {
+  color: var(--white);
+  font-weight: bold;
+}
+
+/* ********* HERO SECTION ********** */
+
+#home-hero-section {
+  min-height: 52vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.planet {
+  animation: float 4s ease-in-out infinite;
+  border-radius: 50%;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 3s infinite;
+}
+
+/* ********* HEADLINE ********** */
+
+#home-headline {
+  font-family: Orbitron;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+}
+
+#headline-first {
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+#awesome {
+  color: var(--gold);
+  opacity: 0%;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+#headline-second {
+  opacity: 0%;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+/* ********* TAGLINE ********** */
+
+#home-tagline {
+  color: var(--grey);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  margin-top: 16px;
+  max-width: 600px;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+  opacity: 0%;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  padding-top: 20px;
+}
+
+/* ********* CARDS SECTION ********** */
+
+#home-cards {
+  /* background: var(--navy); */
+  padding: 40px 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.home-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.home-card-header {
+  display: flex;
+  justify-content: gap;
+  align-items: center;
+  gap: 20px;
+}
+
+.home-card:hover {
+  transform: translateY(-4px);
+}
+
+.home-card-emoji {
+  font-size: 2rem;
+}
+
+.home-card h3 {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.home-card p {
+  font-size: 1rem;
+  color: var(--grey);
+  line-height: 1.6;
+}
+
+.card-explore:hover {
+  box-shadow: 0 0 20px rgba(var(--purple-rgb), 0.5);
+}
+
+.card-track:hover {
+  box-shadow: 0 0 20px rgba(var(--green-rgb), 0.5);
+}
+
+.card-discover:hover {
+  box-shadow: 0 0 20px rgba(var(--gold-rgb), 0.5);
+}
+
+.card-learn:hover {
+  box-shadow: 0 0 20px rgba(var(--blue-rgb), 0.5);
+}
+
+/* ********* ABOUT/FUNFACT SECTION ********** */
+
+#fun-about {
+  background: var(--black);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid rgba(var(--white-rgb), 0.05);
+}
+
+#home-about {
+  padding: 32px;
+  border-right: 1px solid rgba(var(--white-rgb), 0.05);
+}
+
+#home-funfact {
+  padding: 32px;
+}
+
+.home-section-label {
+  font-family: "Share Tech Mono";
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.home-section-text {
+  font-size: 0.95rem;
+  color: var(--grey);
+  line-height: 1.7;
+}
+
+#home-planets-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ************** ANIMATIONS **************** */
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
