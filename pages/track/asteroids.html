@@ -34,11 +34,11 @@
         </div>
         <div id="hazardous-count">
           <span class="stat-number" id="stat-hazardous">--</span>
-          <span class="stat-label">Potentially Hazardous</span>
+          <span class="stat-label">Potentially Hazardous Today</span>
         </div>
         <div id="closest">
           <span class="stat-number" id="stat-closest">--</span>
-          <span class="stat-label">Closest Approach</span>
+          <span class="stat-label">Closest Approach Today</span>
         </div>
         <div id="largest">
           <span class="stat-number" id="stat-largest">--</span>
@@ -49,9 +49,13 @@
       <!-- ******** FILTER SECTION ********** -->
       <section id="asteroid-filters">
         <div id="filter-buttons">
-          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn active" data-filter="all">All Today</button>
           <button class="filter-btn" data-filter="hazardous">
-            ⚠ Hazardous Only
+            ⚠ Hazardous Today
+          </button>
+          <button class="filter-btn" data-filter="week">All This Week</button>
+          <button class="filter-btn" data-filter="hazardous-week">
+            ⚠ Hazardous This Week
           </button>
         </div>
         <select id="sort-select">
@@ -72,6 +76,26 @@
           <canvas id="asteroid-chart"></canvas>
         </div>
       </section>
+
+      <!-- ******** HAZARD EXPLANATION ********** -->
+      <div id="hazard-exp-wrapper">
+        <div id="hazard-explaination">
+          <span id="hazard-explaination-label"
+            >What makes an asteroid potentially hazardous?</span
+          >
+          <p>
+            NASA classifies an asteroid as "Potentially Hazardous" based on two
+            things: size and orbit. <br />
+            It must be larger than about 140 meters AND its orbit must bring it
+            within about 7.5 million kilometers of Earth. That's roughly 20
+            times the distance to the Moon. <br />
+            So, an asteroid can pass closer to Earth but still be "safe" if it's
+            small, while a larger asteroid further away might be flagged as
+            hazardous because of how its orbit is shaped. It doesn't mean it
+            will hit Earth, just that it's worth watching closely!
+          </p>
+        </div>
+      </div>
 
       <!-- ******** ASTEROID LIST ********** -->
       <section id="asteroid-list"></section>

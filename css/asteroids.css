@@ -22,6 +22,10 @@ nav {
   font-weight: bold;
 }
 
+main {
+  padding-right: 0px;
+}
+
 /* **************** HERO SECTION **************** */
 
 #asteroid-hero {
@@ -46,4 +50,331 @@ nav {
   line-height: 1.7;
   font-family: "Inter";
   font-weight: 400;
+}
+
+/* **************** STATS SECTION **************** */
+
+#today-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: var(--navy);
+  border-top: 1px solid rgba(var(--white-rgb), 0.05);
+  border-bottom: 1px solid rgba(var(--white-rgb), 0.05);
+}
+
+#today-stats > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+  border-right: 1px solid rgba(var(--white-rgb), 0.05);
+}
+
+#today-stats > div:last-child {
+  border-right: none;
+}
+
+.stat-number {
+  font-family: "Orbitron";
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 900;
+  color: var(--green);
+}
+
+#stat-hazardous {
+  color: var(--red);
+}
+
+.stat-label {
+  font-family: "Share Tech Mono";
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-top: 6px;
+}
+
+/* **************** FILTERS **************** */
+
+#asteroid-filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 48px;
+  background: var(--navy);
+  border-bottom: 1px solid rgba(var(--white-rgb), 0.05);
+}
+
+.filter-btn {
+  font-family: "Share Tech Mono";
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  padding: 6px 14px;
+  border-radius: 4px;
+  border: 1px solid rgba(var(--white-rgb), 0.15);
+  background: transparent;
+  color: var(--grey);
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background: rgba(var(--green-rgb), 0.15);
+  border-color: rgba(var(--green-rgb), 0.4);
+  color: var(--green);
+}
+
+.filter-btn:hover {
+  border-color: rgba(var(--white-rgb), 0.3);
+  color: var(--white);
+}
+
+#sort-select {
+  margin-left: auto;
+  font-family: "Share Tech Mono";
+  font-size: 14px;
+  padding: 6px 10px;
+  background: var(--blue-dark);
+  border: 1px solid rgba(var(--white-rgb), 0.15);
+  color: var(--grey);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* **************** CHART SECTION **************** */
+
+#asteroid-chart-section {
+  padding: 48px;
+  border-bottom: 1px solid rgba(var(--white-rgb), 0.05);
+  background: rgba(8, 14, 36, 0.5);
+}
+
+#chart-title {
+  font-family: "Share Tech Mono";
+  font-size: 16px;
+  font-weight: bold;
+
+  color: var(--grey);
+}
+
+#asteroid-chart-container {
+  height: 200px;
+  margin-top: 16px;
+}
+
+/* *************** HAZARD EXPLAINATION ************** */
+
+#hazard-exp-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#hazard-explaination {
+  margin-top: 20px;
+  padding: 16px 20px;
+  background: rgba(var(--gold-rgb), 0.06);
+  border: 1px solid rgba(var(--gold-rgb), 0.25);
+  border-radius: 8px;
+}
+
+#hazard-explaination-label {
+  font-family: "Share Tech Mono";
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 8px;
+}
+
+#hazard-explaination p {
+  font-size: 0.9rem;
+  color: var(--grey);
+  line-height: 1.7;
+}
+
+/* **************** ASTEROID LIST/CARD SECTION **************** */
+
+#asteroid-list {
+  padding: 24px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#asteroid-list > div {
+  background: rgba(var(--blue-dark-rgb), 0.6);
+  border: 1px solid rgba(var(--white-rgb), 0.07);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.asteroid-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 26px;
+  margin-bottom: 16px;
+}
+
+.asteroid-top h3 {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 700;
+  flex: 1;
+}
+
+.asteroid-top p {
+  font-family: "Share Tech Mono";
+  font-size: 18px;
+  color: var(--grey);
+}
+
+.hazard-badge {
+  font-family: "Share Tech Mono";
+  font-size: 16px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  background: rgba(var(--red-rgb), 0.15);
+  border: 1px solid rgba(var(--red-rgb), 0.4);
+  color: var(--red);
+  white-space: nowrap;
+}
+
+.safe-badge {
+  font-family: "Share Tech Mono";
+  font-size: 16px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  background: rgba(var(--green-rgb), 0.1);
+  border: 1px solid rgba(var(--green-rgb), 0.3);
+  color: var(--green);
+  white-space: nowrap;
+}
+
+/* **************** DATA BOXES  **************** */
+
+.asteroid-data {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.data-item {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+.data-label {
+  font-family: "Share Tech Mono";
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-bottom: 4px;
+}
+
+.data-value {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.data-sub {
+  font-size: 14px;
+  color: var(--grey);
+  margin-top: 2px;
+}
+
+/* **************** SIZE COMPARISON  **************** */
+
+.size-comparison {
+  font-size: 16px;
+  color: var(--grey);
+  margin-top: 12px;
+  padding: 8px 12px;
+  background: rgba(var(--white-rgb), 0.03);
+  border-radius: 6px;
+  border-left: 2px solid rgba(var(--green-rgb), 0.4);
+}
+
+/* **************** HAZARD METER  **************** */
+
+.threat-meter {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(var(--white-rgb), 0.05);
+}
+
+.threat-meter-label {
+  font-family: "Share Tech Mono";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-bottom: 12px;
+}
+
+.threat-meter-wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.threat-score-display {
+  font-family: "Orbitron";
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1;
+  min-width: 60px;
+  text-align: center;
+}
+
+.threat-level-label {
+  font-family: "Share Tech Mono";
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 4px;
+  color: inherit;
+}
+
+.threat-meter-track-wrap {
+  flex: 1;
+}
+
+.threat-track {
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(
+    90deg,
+    rgba(34, 197, 94, 0.8),
+    rgba(245, 158, 11, 0.8),
+    rgba(239, 68, 68, 0.8)
+  );
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.threat-needle {
+  position: absolute;
+  top: -4px;
+  width: 4px;
+  height: 16px;
+  background: white;
+  border-radius: 2px;
+  transform: translateX(-50%);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.threat-track-labels {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Share Tech Mono";
+  font-size: 14px;
+  color: var(--grey);
+  letter-spacing: 0.08em;
 }
