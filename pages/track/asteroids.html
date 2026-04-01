@@ -3,15 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CosmicRae — Asteroids</title>
+    <title>CosmicRae — Asteroid Tracker</title>
     <link rel="stylesheet" href="../../css/global.css" />
     <link rel="stylesheet" href="../../css/nav.css" />
     <link rel="stylesheet" href="../../css/components.css" />
     <link rel="stylesheet" href="../../css/asteroids.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <div id="navbar"></div>
-    <main></main>
+    <div id="stars-layer"></div>
+    <main>
+      <!-- ******** HERO SECTION ********** -->
+      <section id="asteroid-hero">
+        <h2 id="asteroid-headline">
+          Asteroid <span style="color: var(--green)">Watch</span>
+        </h2>
+        <h4 id="asteroid-tagline">
+          Real-time tracking of near-Earth asteroids from NASA's Center for Near
+          Earth Object Studies.<br />Updated daily with the latest close
+          approach data.
+        </h4>
+      </section>
+
+      <!-- ******** STAT SECTION ********** -->
+      <section id="today-stats">
+        <div id="asteroid-count">
+          <span class="stat-number" id="stat-total">--</span>
+          <span class="stat-label">Asteroids Today</span>
+        </div>
+        <div id="hazardous-count">
+          <span class="stat-number" id="stat-hazardous">--</span>
+          <span class="stat-label">Potentially Hazardous Today</span>
+        </div>
+        <div id="closest">
+          <span class="stat-number" id="stat-closest">--</span>
+          <span class="stat-label">Closest Approach Today</span>
+        </div>
+        <div id="largest">
+          <span class="stat-number" id="stat-largest">--</span>
+          <span class="stat-label">Largest Today</span>
+        </div>
+      </section>
+
+      <!-- ******** FILTER SECTION ********** -->
+      <section id="asteroid-filters">
+        <div id="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Today</button>
+          <button class="filter-btn" data-filter="hazardous">
+            ⚠ Hazardous Today
+          </button>
+          <button class="filter-btn" data-filter="week">All This Week</button>
+          <button class="filter-btn" data-filter="hazardous-week">
+            ⚠ Hazardous This Week
+          </button>
+        </div>
+        <select id="sort-select">
+          <option value="distance">Sort: Closest First</option>
+          <option value="size">Sort: Largest First</option>
+          <option value="date">Sort: Date</option>
+        </select>
+      </section>
+
+      <!-- ******** CHART SECTION ********** -->
+      <section id="asteroid-chart-section">
+        <div id="chart-header">
+          <span id="chart-title"
+            >Miss Distance Overview — Lunar Distances from Earth</span
+          >
+        </div>
+        <div id="asteroid-chart-container">
+          <canvas id="asteroid-chart"></canvas>
+        </div>
+      </section>
+
+      <!-- ******** HAZARD EXPLANATION ********** -->
+      <div id="hazard-exp-wrapper">
+        <div id="hazard-explaination">
+          <span id="hazard-explaination-label"
+            >What makes an asteroid potentially hazardous?</span
+          >
+          <p>
+            NASA classifies an asteroid as "Potentially Hazardous" based on two
+            things: size and orbit. <br />
+            It must be larger than about 140 meters AND its orbit must bring it
+            within about 7.5 million kilometers of Earth. That's roughly 20
+            times the distance to the Moon. <br />
+            So, an asteroid can pass closer to Earth but still be "safe" if it's
+            small, while a larger asteroid further away might be flagged as
+            hazardous because of how its orbit is shaped. It doesn't mean it
+            will hit Earth, just that it's worth watching closely!
+          </p>
+        </div>
+      </div>
+
+      <!-- ******** ASTEROID LIST ********** -->
+      <section id="asteroid-list"></section>
+    </main>
     <script src="../../js/nav.js"></script>
+    <script src="../../js/asteroids.js"></script>
   </body>
 </html>
