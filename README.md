@@ -6,9 +6,9 @@ Because the universe is for everyone.
 
 **Live Site:** [cosmicrae.space](https://cosmicrae.space)
 
-![CosmicRae Homepage](homepage.png)
+![CosmicRae Homepage](assets/images/homepage.png)
 
-![CosmicRae Asteroid Tracker](asteroidscreenshot.png)
+![CosmicRae Asteroid Tracker](assets/images/asteroidscreenshot.png)
 
 ---
 
@@ -21,6 +21,10 @@ Because the universe is for everyone.
 - **Artemis II Tracker** — Live tracking of NASA's first crewed lunar mission since Apollo
 - **ISS Encyclopedia** — History, stats, timeline, and science of the International Space Station
 - **Constellation Background** — Real constellation data rendered on HTML5 Canvas with twinkling star animations
+
+---
+
+_This project is actively maintained and updated. New features added regularly._
 
 ---
 
@@ -70,6 +74,7 @@ I'm a junior software engineering student with a passion for aerospace and space
 ## Author
 
 Lexi Turner
+
 Built with ❤️ for Rae
 
 [GitHub](https://github.com/lexiturner7) · [cosmicrae.space](https://cosmicrae.space)

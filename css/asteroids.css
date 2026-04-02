@@ -378,3 +378,13 @@ main {
   color: var(--grey);
   letter-spacing: 0.08em;
 }
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
