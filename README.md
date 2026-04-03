@@ -10,6 +10,8 @@ Because the universe is for everyone.
 
 ![CosmicRae Asteroid Tracker](assets/images/asteroidscreenshot.png)
 
+![CosmicRae Artemis II Live Tracker](assets/images/artemistracker.jpg)
+
 ---
 
 ## Features
