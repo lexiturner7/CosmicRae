@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CosmicRae — Artemis II</title>
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/nav.css" />
+    <link rel="stylesheet" href="../../css/components.css" />
+    <link rel="stylesheet" href="../../css/artemis2.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div id="stars-layer"></div>
+    <main>
+      <!-- *************** HERO ***************** -->
+      <section id="artemis-hero">
+        <div id="hero-left">
+          <div id="live-mission-badge" class="track-badge">
+            <div class="blinking-dot"></div>
+            <span>Live Mission</span>
+          </div>
+          <h1 id="artemis-headline">Artemis II</h1>
+          <h3 id="artemis-subtitle">Humanity Returns to the Moon!</h3>
+          <h4 id="artemis-tagline">
+            Four astronauts are making history as the first crewed lunar mission
+            since Apollo 17 in 1972. <br />
+            Follow every moment of their 10-day journey around the Moon and
+            back!
+          </h4>
+        </div>
+        <div id="hero-right">
+          <h2 style="color: var(--green)">Mission Elapsed Time</h2>
+          <div id="mission-elapsed-time">
+            <div id="clock"></div>
+            <div id="clock-label">Days Hours Minutes Seconds</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- *************** ORION TRACKER ***************** -->
+      <section id="live-orion-tracker">
+        <div id="tracker-svg-wrap">
+          <svg
+            id="tracker-svg"
+            viewBox="0 0 1000 200"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <!-- Earth -->
+            <circle
+              cx="60"
+              cy="100"
+              r="36"
+              fill="#1e3a8a"
+              stroke="rgba(59,130,246,0.5)"
+              stroke-width="1"
+            />
+            <ellipse
+              cx="52"
+              cy="92"
+              rx="10"
+              ry="7"
+              fill="rgba(34,197,94,0.3)"
+              transform="rotate(-20,52,92)"
+            />
+            <text
+              x="60"
+              y="160"
+              text-anchor="middle"
+              fill="white"
+              font-size="14"
+              font-family="monospace"
+              letter-spacing="2"
+            >
+              EARTH
+            </text>
+
+            <!-- Moon -->
+            <circle
+              cx="940"
+              cy="100"
+              r="26"
+              fill="#374151"
+              stroke="rgba(156,163,175,0.4)"
+              stroke-width="1"
+            />
+            <circle cx="932" cy="94" r="4" fill="rgba(0,0,0,0.15)" />
+            <text
+              x="940"
+              y="150"
+              text-anchor="middle"
+              fill="white"
+              font-size="14"
+              font-family="monospace"
+              letter-spacing="2"
+            >
+              MOON
+            </text>
+
+            <!-- Trajectory arc -->
+            <path
+              id="orion-path"
+              d="M96,100 Q500,20 914,100"
+              fill="none"
+              stroke="rgba(74,222,128,0.2)"
+              stroke-width="3"
+              stroke-dasharray="4 6"
+            />
+
+            <!-- Orion dot -->
+            <circle id="orion-dot" cx="96" cy="100" r="7" fill="#4ade80" />
+            <circle
+              id="orion-ring"
+              cx="96"
+              cy="100"
+              r="13"
+              fill="none"
+              stroke="rgba(74,222,128,0.3)"
+              stroke-width="1"
+            />
+            <text
+              id="orion-label"
+              x="96"
+              y="78"
+              text-anchor="middle"
+              fill="#4ade80"
+              font-size="14"
+              font-family="monospace"
+            >
+              ORION
+            </text>
+          </svg>
+        </div>
+
+        <div id="live-orion-badge" class="track-badge">
+          <div class="blinking-dot"></div>
+          <span>Live Orion Tracker</span>
+        </div>
+
+        <div id="tracker-stats">
+          <div class="tracker-stat">
+            <div id="distance" class="tracker-stat-value"></div>
+            <div class="tracker-stat-label">Distance from Earth</div>
+          </div>
+          <div class="tracker-divider"></div>
+          <div class="tracker-stat">
+            <div id="speed" class="tracker-stat-value"></div>
+            <div class="tracker-stat-label">Current Speed</div>
+          </div>
+          <div class="tracker-divider"></div>
+          <div class="tracker-stat">
+            <div id="distance-remaining" class="tracker-stat-value"></div>
+            <div class="tracker-stat-label">Distance Remaining</div>
+          </div>
+        </div>
+        <p id="tracker-note">
+          Position based on NASA pre-flight ephemeris data. For real-time
+          telemetry visit NASA's AROW.
+        </p>
+      </section>
+
+      <!-- *************** STATS ***************** -->
+
+      <section id="artemis-stats">
+        <div id="crew-number">
+          <span class="stat-head">4</span>
+          <span class="stat-tag">Crew Members</span>
+        </div>
+        <div id="mission-days">
+          <span class="stat-head">10</span>
+          <span class="stat-tag">Mission Days</span>
+        </div>
+        <div id="last-mission-year">
+          <span class="stat-head">1972</span>
+          <span class="stat-tag">Last Crewed Lunar Mission</span>
+        </div>
+        <div id="reentry-speed">
+          <span class="stat-head">~25K</span>
+          <span class="stat-tag">MPH Reentry Speed</span>
+        </div>
+        <div id="mission-distance">
+          <span class="stat-head">~252,799 mi</span>
+          <span class="stat-tag">Mission Distance</span>
+        </div>
+        <div id="launch-date">
+          <span class="stat-head">April 1, 2026</span>
+          <span class="stat-tag">Launch Date</span>
+        </div>
+        <div id="launch-site">
+          <span class="stat-head">LC-39B</span>
+          <span class="stat-tag">Launch Pad</span>
+        </div>
+      </section>
+
+      <!-- *************** TIMELINE ***************** -->
+      <section id="artemis-timeline">
+        <div id="timeline-orion-container">
+          <h3>Mission Timeline</h3>
+          <div class="mission-timeline-item">
+            <span class="day">Day 0</span>
+            <span class="mission-timeline-text"
+              >Launch <br />
+              <span style="color: var(--grey)"
+                >SLS lifts off from LC-39B at Kennedy Space Center, Florida at
+                6:35PM EDT</span
+              ></span
+            >
+          </div>
+          <div class="mission-timeline-item">
+            <span class="day">Day 1</span>
+            <span class="mission-timeline-text"
+              >Systems Check <br />
+              <span style="color: var(--grey)"
+                >Crew verifies Orion's life support, navigation, and
+                commjnication systems in Earth orbit</span
+              ></span
+            >
+          </div>
+          <div class="mission-timeline-item">
+            <span class="day">Day 3</span>
+            <span class="mission-timeline-text"
+              >Trans-Lunar Injection <br />
+              <span style="color: var(--grey)"
+                >ICPS engine burn sends Orion on its trajectory toward the
+                Moon</span
+              ></span
+            >
+          </div>
+          <div class="mission-timeline-item">
+            <span class="day">Day 5</span>
+            <span class="mission-timeline-text"
+              >Lunar Flyby <br />
+              <span style="color: var(--grey)"
+                >Orion reaches closest approach to the Moon then swings around
+                to 4,600 miles beyond the lunar far side</span
+              ></span
+            >
+          </div>
+          <div class="mission-timeline-item">
+            <span class="day">Day 10</span>
+            <span class="mission-timeline-text"
+              >Splashdown <br />
+              <span style="color: var(--grey)"
+                >Orion re-enters at 25,000 mph and splashes down in the Pacific
+                Ocean off San Diego, CA</span
+              ></span
+            >
+          </div>
+        </div>
+
+        <div id="orion-img">
+          <img id="orion" src="../../assets/images/orion.jpg" />
+        </div>
+      </section>
+
+      <!-- *************** CREW ***************** -->
+      <h2 style="color: var(--green); padding-left: 24px">Artemis II Crew</h2>
+      <section id="artemis-crew">
+        <div class="crew-card">
+          <img src="../../assets/images/wiseman.jpg" />
+          <h3>Reid Wiseman</h3>
+          <span style="color: var(--green)">Commander</span>
+          <span>NASA</span>
+        </div>
+        <div class="crew-card">
+          <img src="../../assets/images/glover.jpg" />
+          <h3>Victor Glover</h3>
+          <span style="color: var(--green)">Pilot</span>
+          <span>NASA</span>
+        </div>
+        <div class="crew-card">
+          <img src="../../assets/images/koch.jpg" />
+          <h3>Christina Koch</h3>
+          <span style="color: var(--green)">Mission Specialist</span>
+          <span>NASA</span>
+        </div>
+        <div class="crew-card">
+          <img src="../../assets/images/hansen.jpg" />
+          <h3>Jeremy Hansen</h3>
+          <span style="color: var(--green)">Mission Specialist</span>
+          <span>CSA (Canadian Space Agency)</span>
+        </div>
+      </section>
+
+      <!-- *************** MISSION OVERVIEW ***************** -->
+
+      <section id="mission-overview">
+        <div id="artemis-info">
+          <h2>What is Artemis II?</h2>
+          <p>
+            Artemis II is NASA's first crewed mission to fly humans around the
+            Moon since Apollo 17 in 1972. That means for the first time in over
+            50 years, real people are traveling to the Moon!
+          </p>
+
+          <p>
+            Four astronauts are riding inside a spacecraft called Orion, which
+            was launched on top of the most powerful rocket ever built, the
+            Space Launch System (SLS). Their journey will take them all the way
+            around the far side of the Moon before returning safely home to
+            Earth.
+          </p>
+          <p>
+            While in space, the crew will put Orion's life support systems
+            through their paces for the first time with real astronauts on
+            board. They will test the air, water, temperature controls, and
+            communication systems to make sure everything works perfectly for
+            longer missions in the future.
+          </p>
+
+          <p>
+            The astronauts will also test Orion's manual flight controls,
+            letting the pilot actually fly the spacecraft by hand near the Moon.
+            This is a big deal because it proves that humans, not just
+            computers, can steer a spacecraft in deep space.
+          </p>
+
+          <p>
+            Scientists on the ground will study how the crew's bodies respond to
+            deep space radiation, which is much stronger beyond Earth's
+            protective magnetic field. This research will help doctors keep
+            future astronauts healthy on longer missions to the Moon and
+            eventually Mars.
+          </p>
+          <p>
+            The mission is named after Artemis, the Greek goddess of the Moon
+            and twin sister of Apollo. Just like the Apollo missions landed the
+            first humans on the Moon, the Artemis program is paving the way for
+            the next generation of lunar explorers, including the first woman
+            and first person of color to walk on the Moon.
+          </p>
+
+          <p>
+            Artemis II is not just a test flight. It is proof that humanity is
+            heading back to the Moon, and this time, to stay.
+          </p>
+        </div>
+
+        <div id="artemis-img">
+          <img src="../../assets/images/artemis2rocket.jpg" />
+        </div>
+      </section>
+    </main>
+    <script src="../../js/nav.js"></script>
+    <script src="../../js/artemis2.js"></script>
+  </body>
+</html>

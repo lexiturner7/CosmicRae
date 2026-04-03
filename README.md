@@ -6,9 +6,9 @@ Because the universe is for everyone.
 
 **Live Site:** [cosmicrae.space](https://cosmicrae.space)
 
-![CosmicRae Homepage](homepage.png)
+![CosmicRae Homepage](assets/images/homepage.png)
 
-![CosmicRae Asteroid Tracker](asteroidscreenshot.png)
+![CosmicRae Asteroid Tracker](assets/images/asteroidscreenshot.png)
 
 ---
 
@@ -24,6 +24,10 @@ Because the universe is for everyone.
 
 ---
 
+_This project is actively maintained and updated. New features added regularly._
+
+---
+
 ## Tech Stack
 
 - **Vanilla HTML, CSS, JavaScript**
@@ -35,17 +39,24 @@ Because the universe is for everyone.
 - **CSS Animations** — Shooting stars, floating planets, twinkling stars, threat meters
 - **GitHub Pages** — Deployed via custom domain
 
+## Live Orion Tracker NOTE
+
+Position data is based on NASA's pre-flight predicted trajectory, not live
+telemetry. Actual position may vary slightly due to in-flight burns and
+corrections. For real-time telemetry, visit NASA's official AROW tracker.
+
 ---
 
 ## Pages
 
-| Section  | Page                | What it demonstrates                             |
-| -------- | ------------------- | ------------------------------------------------ |
-| Explore  | APOD                | NASA API integration, date picker, async/await   |
-| Track    | ISS Tracker         | Real-time data, Leaflet.js, setInterval          |
-| Track    | Asteroid Watch      | Complex nested JSON, Chart.js, filtering/sorting |
-| Discover | Planet Encyclopedia | Dynamic JSON rendering, URL parameters, Canvas   |
-| Discover | ISS Encyclopedia    | Static content design, timeline, stats layout    |
+| Section  | Page                | What it demonstrates                                                                    |
+| -------- | ------------------- | --------------------------------------------------------------------------------------- |
+| Explore  | APOD                | NASA API integration, date picker, async/await                                          |
+| Track    | ISS Tracker         | Real-time data, Leaflet.js, setInterval                                                 |
+| Track    | Asteroid Watch      | Complex nested JSON, Chart.js, filtering/sorting                                        |
+| Track    | Artemis II Tracker  | Ephemeris parsing, SVG path animation, vector magnitude math, real NASA trajectory data |
+| Discover | Planet Encyclopedia | Dynamic JSON rendering, URL parameters, Canvas                                          |
+| Discover | ISS Encyclopedia    | Static content design, timeline, stats layout                                           |
 
 ---
 
@@ -70,6 +81,7 @@ I'm a junior software engineering student with a passion for aerospace and space
 ## Author
 
 Lexi Turner
+
 Built with ❤️ for Rae
 
 [GitHub](https://github.com/lexiturner7) · [cosmicrae.space](https://cosmicrae.space)

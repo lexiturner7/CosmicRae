@@ -91,7 +91,7 @@ nav {
 
 .lab-card-header {
   display: flex;
-  color: var(--cyan);
+  color: var(--white);
   align-items: center;
   gap: 20px;
 }

@@ -1,0 +1,337 @@
+.blinking-dot {
+  width: 12px;
+  height: 12px;
+  background-color: var(--green);
+  border-radius: 50%;
+  display: inline-block;
+  animation: blink 1.5s infinite;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 3s infinite;
+}
+
+nav {
+  background: var(--black);
+  opacity: 0.8;
+}
+
+#stars-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#navbar ul li #tracknav {
+  color: var(--green);
+  font-weight: bold;
+}
+
+main {
+  padding-right: 0px;
+}
+
+/* ************************ HERO ***************************** */
+
+#artemis-hero {
+  display: flex;
+  gap: 180px;
+}
+
+#hero-right {
+  padding: 100px 24px;
+}
+
+#hero-left {
+  padding: 24px;
+  padding-left: 40px;
+}
+
+#clock {
+  font-family: "Orbitron";
+  font-size: 2.5rem;
+  font-weight: bold;
+  justify-content: center;
+  display: flex;
+}
+
+#clock-label {
+  display: flex;
+  justify-content: center;
+  font-family: "Share Tech Mono";
+  word-spacing: 2.2em;
+}
+
+#live-mission-badge {
+  padding: 10px;
+}
+
+#artemis-subtitle {
+  padding-top: 10px;
+}
+
+#artemis-headline {
+  color: var(--green);
+  padding-top: 30px;
+}
+
+#artemis-tagline {
+  font-size: 16px;
+  padding-top: 10px;
+  font-family: "Share Tech Mono";
+  color: var(--grey);
+}
+
+/* ************************ ORION TRACKER ***************************** */
+
+#live-orion-tracker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 3rem 2rem;
+}
+
+#tracker-svg-wrap {
+  width: 100%;
+  max-width: 1200px;
+}
+
+#tracker-stats {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.tracker-stat {
+  text-align: center;
+}
+
+.tracker-stat-value {
+  font-family: "Orbitron";
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--white);
+}
+
+.tracker-stat-label {
+  font-family: "Share Tech Mono";
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-top: 6px;
+}
+
+.tracker-divider {
+  width: 1px;
+  height: 60px;
+  background: rgba(74, 222, 128, 0.15);
+}
+
+#tracker-note {
+  font-size: 11px;
+  color: var(--grey);
+  font-family: "Share Tech Mono";
+  padding-top: 30px;
+}
+
+.track-badge {
+  background: rgba(var(--green-rgb), 0.09);
+  border: 1px solid rgba(var(--green-rgb), 0.4);
+  color: var(--green);
+  border-radius: 10px;
+  font-family: Share Tech Mono;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#live-orion-badge {
+  padding: 10px;
+}
+
+/* ************************ STATS ***************************** */
+
+#artemis-stats {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background: var(--navy);
+  border-top: 1px solid rgba(var(--white-rgb), 0.05);
+  border-bottom: 1px solid rgba(var(--white-rgb), 0.05);
+}
+
+#artemis-stats > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-right: 1px solid rgba(var(--white-rgb), 0.05);
+}
+
+#artemis-stats > div:last-child {
+  border-right: none;
+}
+
+.stat-head {
+  font-family: "Orbitron";
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--green);
+}
+
+.stat-tag {
+  font-family: "Share Tech Mono";
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-top: 6px;
+}
+
+/* ************************ TIMELINE ***************************** */
+
+#artemis-timeline h3 {
+  margin-bottom: 50px;
+  color: var(--green);
+}
+
+#artemis-timeline {
+  position: relative;
+  padding-left: 40px;
+
+  padding-bottom: 40px;
+}
+
+.mission-timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.day {
+  font-family: Share Tech Mono;
+  font-size: 18px;
+  color: var(--green);
+  min-width: 40px;
+  white-space: nowrap;
+  padding-top: 2px;
+}
+
+.mission-timeline-text {
+  color: var(--white);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+#artemis-timeline {
+  display: flex;
+  gap: 40px;
+  padding: 40px 48px;
+  align-items: flex-start;
+}
+
+#orion-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#timeline-orion-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#orion {
+  width: 80%;
+  padding-top: 80px;
+}
+
+/* ****************** CREW CARDS ******************* */
+
+#artemis-crew {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  padding: 24px;
+  padding-bottom: 100px;
+}
+
+.crew-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ****************** MISSION OVERVIEW ***************** */
+
+#mission-overview {
+  max-width: 100%;
+  padding: 48px;
+  margin: 0 auto;
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+#mission-overview p {
+  font-family: "Share Tech Mono";
+  color: var(--grey);
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  padding-top: 20px;
+}
+
+#artemis-info {
+  flex: 1;
+}
+
+#artemis-info h2 {
+  color: var(--green);
+}
+
+#artemis-img {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+#artemis-img img {
+  width: 80%;
+  padding-top: 60px;
+  padding-right: 100px;
+}
+
+/* ****************** ANIMATIONS ******************* */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}

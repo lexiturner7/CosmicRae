@@ -67,24 +67,14 @@ nav {
 
 /* *************** PAGE CONTENT *************** */
 
-/* #planet-image {
-  display: block;
-  margin: 0 auto;
-  width: 60%;
-  max-width: 600px;
-  border-radius: 50%;
-} */
-
 #planet-jump-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
   position: relative;
-  /* top: 148px;
-  z-index: 8; */
+
   padding: 40px 24px;
-  /* background-color: rgba(var(--black-rgb), 1); */
 }
 
 #planet-jump-links a {
@@ -104,8 +94,6 @@ nav {
 }
 
 #planet-sections {
-  /* display: flex;
-  flex-direction: column; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;

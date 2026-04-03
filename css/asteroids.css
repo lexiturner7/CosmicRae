@@ -18,7 +18,7 @@ nav {
 }
 
 #navbar ul li #tracknav {
-  color: var(--cyan);
+  color: var(--green);
   font-weight: bold;
 }
 
@@ -377,4 +377,14 @@ main {
   font-size: 14px;
   color: var(--grey);
   letter-spacing: 0.08em;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
 }
