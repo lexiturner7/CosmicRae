@@ -78,6 +78,10 @@
 .page-title {
   color: rgba(var(--purple-rgb));
 }
+nav {
+  background: var(--black);
+  opacity: 0.8;
+}
 
 /* ***************** STAR BG ***************** */
 

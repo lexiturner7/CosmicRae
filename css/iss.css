@@ -72,8 +72,42 @@
   font-weight: bold;
 }
 
+nav {
+  background: var(--black);
+  opacity: 0.8;
+}
+
 .page-title {
   color: rgba(var(--green-rgb));
+}
+
+/* ***************** ISS INFO LINK ***************** */
+#iss-link {
+  padding: 20px;
+  max-width: 40%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#iss-info-link {
+  display: inline-block;
+  margin-top: 0px;
+  color: var(--white);
+  font-family: "Share Tech Mono";
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  padding-top: 10px;
+}
+
+#iss-info-link:hover {
+  color: var(--green);
+}
+
+#iss-link-headline {
+  color: var(--green);
+  font-family: "Share Tech Mono";
+  font-size: 24px;
 }
 
 /* ***************** STAR BG ***************** */
