@@ -39,13 +39,20 @@ _This project is actively maintained and updated. New features added regularly._
 - **Chart.js** — Data visualization for asteroid miss distances
 - **HTML5 Canvas** — Custom constellation render with real star coordinates
 - **CSS Animations** — Shooting stars, floating planets, twinkling stars, threat meters
+- **SVG Animation** — Dynamic path tracking with `getPointAtLength()` for real-time spacecraft position
+- **CCSDS OEM Ephemeris Data** — NASA/JSC trajectory data parsing and vector magnitude calculations
 - **GitHub Pages** — Deployed via custom domain
 
-## Live Orion Tracker NOTE
+---
 
-Position data is based on NASA's pre-flight predicted trajectory, not live
-telemetry. Actual position may vary slightly due to in-flight burns and
-corrections. For real-time telemetry, visit NASA's official AROW tracker.
+## Data Sources & Notes
+
+- **NASA APOD API** — Astronomy Picture of the Day
+- **Open Notify API** — ISS real-time position and crew
+- **NASA NeoWs API** — Near Earth Object data
+- **NASA/JSC/FOD/FDO** — Artemis II OEM ephemeris file (CCSDS standard, EME2000 frame)
+
+> Artemis II position data is based on NASA's pre-flight predicted trajectory, not live telemetry. Actual position may vary slightly due to in-flight burns and corrections. For real-time telemetry visit NASA's official AROW tracker.
 
 ---
 
