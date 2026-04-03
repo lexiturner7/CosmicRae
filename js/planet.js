@@ -19,7 +19,7 @@ async function getPlanetDataByID() {
     planetName.textContent = `${planet.name}`;
 
     const planetModel = document.getElementById("model");
-    planetModel.src = `../../assets/3d/${planet.name}.glb`;
+    planetModel.src = `../../assets/3d/${planet.id}.glb`;
 
     const planetTagline = document.getElementById("planet-tagline");
     planetTagline.textContent = `${planet.tagline}`;
