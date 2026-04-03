@@ -13,20 +13,20 @@ L.tileLayer(
 const marker = L.marker([51.5, -0.09]).addTo(map);
 
 async function fetchISS() {
-  const url = `http://api.open-notify.org/iss-now.json`;
+  const url = `https://api.wheretheiss.at/v1/satellites/25544`;
   try {
     const response = await fetch(url);
     const data = await response.json();
-    const isslatitude = data.iss_position.latitude;
-    const isslongitude = data.iss_position.longitude;
+    const isslatitude = data.latitude;
+    const isslongitude = data.longitude;
 
     const issLatitudeElement = document.getElementById("iss-latitude");
     if (issLatitudeElement) {
-      issLatitudeElement.textContent = `Latitude: ${isslatitude}`;
+      issLatitudeElement.textContent = `Latitude: ${isslatitude.toFixed(4)}`;
     }
     const issLongitudeElement = document.getElementById("iss-longitude");
     if (issLongitudeElement) {
-      issLongitudeElement.textContent = `Longitude: ${isslongitude}`;
+      issLongitudeElement.textContent = `Longitude: ${isslongitude.toFixed(4)}`;
     }
 
     marker.setLatLng([isslatitude, isslongitude]);
@@ -39,7 +39,7 @@ async function fetchISS() {
 //CREW FUNCTION
 
 async function fetchCrew() {
-  const url = `http://api.open-notify.org/astros.json`;
+  const url = `https://corquaid.github.io/international-space-station-APIs/JSON/people-in-space.json`;
   const crew = document.getElementById("iss-astros");
   try {
     const response = await fetch(url);
@@ -47,7 +47,7 @@ async function fetchCrew() {
 
     crew.innerHTML = "";
     data.people.forEach((person) => {
-      if (person.craft === "ISS") {
+      if (person.iss) {
         const listItem = document.createElement("li");
         listItem.textContent = person.name;
         crew.appendChild(listItem);
@@ -59,10 +59,9 @@ async function fetchCrew() {
 }
 
 //FUNCTION CALLS
-
-let intervalID = setInterval(fetchISS, 5000);
 fetchISS();
 fetchCrew();
+let intervalID = setInterval(fetchISS, 5000);
 
 // ******************** TWINKLING STARS BG ********************
 const exploreStars = document.getElementById("stars-layer");
