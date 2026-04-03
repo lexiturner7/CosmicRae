@@ -39,17 +39,24 @@ _This project is actively maintained and updated. New features added regularly._
 - **CSS Animations** — Shooting stars, floating planets, twinkling stars, threat meters
 - **GitHub Pages** — Deployed via custom domain
 
+## Live Orion Tracker NOTE
+
+Position data is based on NASA's pre-flight predicted trajectory, not live
+telemetry. Actual position may vary slightly due to in-flight burns and
+corrections. For real-time telemetry, visit NASA's official AROW tracker.
+
 ---
 
 ## Pages
 
-| Section  | Page                | What it demonstrates                             |
-| -------- | ------------------- | ------------------------------------------------ |
-| Explore  | APOD                | NASA API integration, date picker, async/await   |
-| Track    | ISS Tracker         | Real-time data, Leaflet.js, setInterval          |
-| Track    | Asteroid Watch      | Complex nested JSON, Chart.js, filtering/sorting |
-| Discover | Planet Encyclopedia | Dynamic JSON rendering, URL parameters, Canvas   |
-| Discover | ISS Encyclopedia    | Static content design, timeline, stats layout    |
+| Section  | Page                | What it demonstrates                                                                    |
+| -------- | ------------------- | --------------------------------------------------------------------------------------- |
+| Explore  | APOD                | NASA API integration, date picker, async/await                                          |
+| Track    | ISS Tracker         | Real-time data, Leaflet.js, setInterval                                                 |
+| Track    | Asteroid Watch      | Complex nested JSON, Chart.js, filtering/sorting                                        |
+| Track    | Artemis II Tracker  | Ephemeris parsing, SVG path animation, vector magnitude math, real NASA trajectory data |
+| Discover | Planet Encyclopedia | Dynamic JSON rendering, URL parameters, Canvas                                          |
+| Discover | ISS Encyclopedia    | Static content design, timeline, stats layout                                           |
 
 ---
 

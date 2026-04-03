@@ -90,7 +90,7 @@ nav {
 
 .discover-card-header {
   display: flex;
-  color: var(--gold);
+  color: var(--white);
   align-items: center;
   gap: 20px;
 }

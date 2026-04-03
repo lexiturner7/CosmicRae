@@ -91,7 +91,7 @@ nav {
 
 #home-cards {
   /* background: var(--navy); */
-  padding: 40px 24px;
+  padding: 30px 24px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -156,7 +156,7 @@ nav {
 }
 
 #home-about {
-  padding: 32px;
+  padding: 20px 32px;
   border-right: 1px solid rgba(var(--white-rgb), 0.05);
 }
 
