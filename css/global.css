@@ -132,10 +132,12 @@ h4 {
 }
 
 main {
-  /* padding-bottom: 60px; */
-
   position: relative;
   z-index: 1;
+  min-height: 67vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 a {
