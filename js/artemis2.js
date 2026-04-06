@@ -115,7 +115,7 @@ function artemisCalculations(todayData) {
     (rawDistance * miles).toFixed(0),
   ).toLocaleString();
   const distanceRemaining = parseFloat(
-    ((384400 - rawDistance) * miles).toFixed(0),
+    (Math.abs(384400 - rawDistance) * miles).toFixed(0),
   ).toLocaleString();
   const speedMph = parseFloat(
     (
@@ -139,3 +139,28 @@ async function init() {
 
 init();
 setInterval(init, 60000);
+
+// ****************** TIMELINE POPUP POSITIONING ******************
+const timelineItems = document.querySelectorAll(".mission-timeline-item");
+
+timelineItems.forEach((item) => {
+  item.addEventListener("mouseenter", () => {
+    const popup = item.querySelector(".timeline-popup");
+
+    popup.style.display = "flex";
+    popup.style.top = "0";
+    popup.style.bottom = "auto";
+
+    const rect = popup.getBoundingClientRect();
+
+    if (rect.bottom > window.innerHeight) {
+      popup.style.top = "auto";
+      popup.style.bottom = "0";
+    }
+  });
+
+  item.addEventListener("mouseleave", () => {
+    const popup = item.querySelector(".timeline-popup");
+    popup.style.display = "none";
+  });
+});

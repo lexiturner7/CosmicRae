@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="../../css/nav.css" />
     <link rel="stylesheet" href="../../css/components.css" />
     <link rel="stylesheet" href="../../css/artemis2.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
   </head>
   <body>
     <div id="navbar"></div>
@@ -169,7 +170,7 @@
           <div class="tracker-divider"></div>
           <div class="tracker-stat">
             <div id="distance-remaining" class="tracker-stat-value"></div>
-            <div class="tracker-stat-label">Distance Remaining</div>
+            <div class="tracker-stat-label">Distance to Moon</div>
           </div>
         </div>
         <p id="tracker-note">
@@ -213,8 +214,14 @@
 
       <!-- *************** TIMELINE ***************** -->
       <section id="artemis-timeline">
-        <div id="timeline-orion-container">
-          <h3>Mission Timeline</h3>
+        <div id="timeline-map-container">
+          <h3>
+            Mission Timeline<br /><span
+              style="color: var(--grey); font-size: 14px"
+              >Hover to learn more!</span
+            >
+          </h3>
+
           <div class="mission-timeline-item">
             <span class="day">Day 0</span>
             <span class="mission-timeline-text"
@@ -224,16 +231,37 @@
                 6:35PM EDT</span
               ></span
             >
+            <div class="timeline-popup">
+              <img src="../../assets/images/artemis2-liftoff.jpg" />
+              <p>
+                Orion sits on top of the most powerful rocket ever built. When
+                the engines ignite, they produce 8.8 million pounds of thrust,
+                which is more than 160,000 car engines all running at once! In
+                just 8 minutes, the crew goes from standing still to traveling
+                17,500 miles per hour!
+              </p>
+            </div>
           </div>
+
           <div class="mission-timeline-item">
             <span class="day">Day 1</span>
             <span class="mission-timeline-text"
               >Systems Check <br />
               <span style="color: var(--grey)"
                 >Crew verifies Orion's life support, navigation, and
-                commjnication systems in Earth orbit</span
+                communication systems in Earth orbit</span
               ></span
             >
+            <div class="timeline-popup">
+              <img src="../../assets/images/orion-interior.jpg" />
+              <p>
+                Before heading to the Moon, the crew spends a full day making
+                sure everything on Orion works perfectly. They test the air they
+                breathe, the water they drink, and all the computers that help
+                fly the spacecraft. It is like doing a full checkup before a
+                really long road trip!
+              </p>
+            </div>
           </div>
           <div class="mission-timeline-item">
             <span class="day">Day 3</span>
@@ -244,6 +272,16 @@
                 Moon</span
               ></span
             >
+            <div class="timeline-popup">
+              <img src="../../assets/images/orion-tli.jpg" />
+              <p>
+                This is the moment Orion leaves Earth orbit and heads for the
+                Moon! A rocket engine called the Interim Cryogenic Propulsion
+                Stage, or commonly referred to as the ICPS, fires for about 6
+                minutes, speeding Orion up to over 24,500 miles per hour. After
+                this burn, there is no turning back. The crew is Moon-bound!
+              </p>
+            </div>
           </div>
           <div class="mission-timeline-item">
             <span class="day">Day 5</span>
@@ -254,6 +292,16 @@
                 to 4,600 miles beyond the lunar far side</span
               ></span
             >
+            <div class="timeline-popup">
+              <img src="../../assets/images/orion-moon.jpg" />
+              <p>
+                Orion swings around the far side of the Moon, the side we never
+                see from the Earth. At it's closest, the crew is just 6,400
+                miles above the lunar surface. They will travel farther from
+                Earth than any humans! The previous record was held by the
+                Apollo 13 crew in 1970!
+              </p>
+            </div>
           </div>
           <div class="mission-timeline-item">
             <span class="day">Day 10</span>
@@ -264,11 +312,22 @@
                 Ocean off San Diego, CA</span
               ></span
             >
+            <div class="timeline-popup">
+              <img src="../../assets/images/orion-splashdown.jpg" />
+              <p>
+                Orion hits Earth's atmosphere at 25,000 miles per hour, which is
+                fast enough to travel from New York to Los Angeles in about 6
+                minutes, or 7 miles in one second! Special heat shields protect
+                the crew as temperatures outside reach 5,000 degrees. Then,
+                parachutes slow them down for a safe landing in the Pacific
+                Ocean, just off the coast of San Diego, CA.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div id="orion-img">
-          <img id="orion" src="../../assets/images/orion.jpg" />
+        <div id="map-img">
+          <img id="path-map-img" src="../../assets/images/artemis2map.jpg" />
         </div>
       </section>
 
@@ -359,8 +418,10 @@
           <img src="../../assets/images/artemis2rocket.jpg" />
         </div>
       </section>
+      <div id="footer"></div>
     </main>
     <script src="../../js/nav.js"></script>
     <script src="../../js/artemis2.js"></script>
+    <script src="../../js/footer.js"></script>
   </body>
 </html>
