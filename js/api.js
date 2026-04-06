@@ -12,6 +12,16 @@ function saveToCache(data) {
   localStorage.setItem(`apod-${today}`, JSON.stringify(data));
 }
 
+// ********** RESET DISPLAY **********
+function resetDisplay() {
+  document.getElementById("apod-img").style.display = "none";
+  document.getElementById("apod-img-error").style.display = "none";
+  document.getElementById("apod-img-skeleton").style.display = "block";
+  document.getElementById("apod-title-skeleton").style.display = "block";
+  document.getElementById("apod-explanation-skeleton").style.display = "block";
+  document.getElementById("apod-explanation").style.display = "none";
+}
+
 // ********** DISPLAY DATA **********
 function displayData(data) {
   document.getElementById("apod-img-skeleton").style.display = "none";
@@ -24,11 +34,13 @@ function displayData(data) {
     apodImageElement.style.display = "block";
     apodImageElement.src = data.url;
   } else {
+    document.getElementById("apod-img-skeleton").style.display = "none";
     document.getElementById("apod-img-error").style.display = "flex";
-    document
-      .getElementById("apod-img-error")
-      .querySelector("p:last-child").textContent =
-      "Today's APOD is a video — visit NASA to watch!";
+    document.getElementById("apod-img-error").innerHTML = `
+      <p style="font-size: 3rem;">🔭</p>
+      <p>Today's APOD is a video!</p>
+      <a href="https://apod.nasa.gov/apod/astropix.html" target="_blank" style="color: var(--purple); font-family: 'Share Tech Mono'; font-size: 13px;">Watch on NASA</a>
+    `;
   }
 
   document.getElementById("apod-title").textContent = data.title;
@@ -55,6 +67,8 @@ function displayError() {
 
 // ********** FETCH DATA **********
 async function fetchData(date) {
+  resetDisplay();
+
   const url = `https://api.nasa.gov/planetary/apod?api_key=SBSIoshhB1ZROHaZDXumcYjjKFIRSryuL9L8FbzN${date ? `&date=${date}` : ""}`;
 
   if (!date) {
