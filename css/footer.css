@@ -1,0 +1,148 @@
+/* ****************** FOOTER ***************** */
+
+footer {
+  background: rgba(var(--black-rgb), 0.6);
+  border-top: 1px solid rgba(124, 58, 237, 0.3);
+  padding: 1rem 2rem 0.5rem !important;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+#footer-title {
+  font-family: "Orbitron";
+  font-size: 1.4rem;
+  color: var(--purple);
+  margin: 0;
+  text-align: left;
+}
+
+#footer-tagline {
+  font-family: "Share Tech Mono";
+  font-size: 13px;
+  color: var(--white);
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+#footer-links {
+  display: flex;
+  gap: 6rem;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 1rem;
+}
+
+#page-links {
+  display: flex;
+  gap: 3rem;
+}
+
+#footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#footer-links ul span {
+  font-family: "Share Tech Mono";
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--purple);
+  margin-bottom: 4px;
+}
+
+#footer-links ul li {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+#footer-links ul li a {
+  font-family: "Share Tech Mono";
+  font-size: 13px;
+  color: var(--grey);
+  text-decoration: none;
+  padding: 0;
+  display: inline;
+}
+
+#footer-links ul li a:hover {
+  font-weight: bold;
+  color: var(--white);
+  background-color: #080d18;
+}
+
+#footer-contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#footer-contact-links span {
+  font-family: "Share Tech Mono";
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--purple);
+  margin-bottom: 4px;
+}
+
+#footer-contact-links a {
+  font-family: "Share Tech Mono";
+  font-size: 13px;
+  color: var(--grey);
+  text-decoration: none;
+  padding: 0;
+}
+
+#footer-contact-links a:hover {
+  font-weight: bold;
+  color: var(--white);
+  background-color: #080d18;
+}
+
+#copyright {
+  font-family: "Share Tech Mono";
+  font-size: 14px;
+  color: #4b5563;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  width: 100%;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+#footer-data-links {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 48px !important;
+  row-gap: 8px;
+}
+
+#footer-data-links span {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+#footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
