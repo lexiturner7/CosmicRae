@@ -83,7 +83,7 @@ No build tools or dependencies required — open `index.html` directly in any br
 
 ## Why I Built This
 
-I'm a junior software engineering student with a passion for aerospace and space exploration. I built CosmicRae for my niece Rae, who loves space and inspired me to make something that makes the universe feel exciting and accessible to kids. Every technical decision, from vanilla JavaScript over frameworks, to real NASA API integrations, was made intentionally to build strong fundamentals while creating something genuinely useful.
+I'm a junior software engineering student with a passion for aerospace and space exploration. I built CosmicRae for my niece Rae who loves space and inspired me to make something that makes the universe feel exciting and accessible to kids. Every technical decision, from vanilla JavaScript over frameworks, to real NASA API integrations, was made intentionally to build strong fundamentals while creating something she could actually use.
 
 ---
 
