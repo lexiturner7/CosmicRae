@@ -40,6 +40,7 @@ main {
 #artemis-hero {
   display: flex;
   gap: 180px;
+  padding-bottom: 20px;
 }
 
 #hero-right {
@@ -49,26 +50,6 @@ main {
 #hero-left {
   padding: 24px;
   padding-left: 40px;
-}
-
-#clock {
-  font-family: "Orbitron";
-  font-size: 2.5rem;
-  font-weight: bold;
-  justify-content: center;
-  display: flex;
-}
-
-#clock-label {
-  display: flex;
-  justify-content: center;
-  padding-left: 30px;
-  font-family: "Share Tech Mono";
-  word-spacing: 2em;
-}
-
-#live-mission-badge {
-  padding: 10px;
 }
 
 #artemis-subtitle {
@@ -85,77 +66,6 @@ main {
   padding-top: 10px;
   font-family: "Share Tech Mono";
   color: var(--grey);
-}
-
-/* ************************ ORION TRACKER ***************************** */
-
-#live-orion-tracker {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 3rem 2rem;
-}
-
-#tracker-svg-wrap {
-  width: 100%;
-  max-width: 1200px;
-}
-
-#tracker-stats {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-}
-
-.tracker-stat {
-  text-align: center;
-}
-
-.tracker-stat-value {
-  font-family: "Orbitron";
-  font-size: 2rem;
-  font-weight: 900;
-  color: var(--white);
-}
-
-.tracker-stat-label {
-  font-family: "Share Tech Mono";
-  font-size: 16px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--grey);
-  margin-top: 6px;
-}
-
-.tracker-divider {
-  width: 1px;
-  height: 60px;
-  background: rgba(74, 222, 128, 0.15);
-}
-
-#tracker-note {
-  font-size: 11px;
-  color: var(--grey);
-  font-family: "Share Tech Mono";
-  padding-top: 30px;
-}
-
-.track-badge {
-  background: rgba(var(--green-rgb), 0.09);
-  border: 1px solid rgba(var(--green-rgb), 0.4);
-  color: var(--green);
-  border-radius: 10px;
-  font-family: Share Tech Mono;
-  font-size: 14px;
-  letter-spacing: 0.08em;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-
-#live-orion-badge {
-  padding: 10px;
 }
 
 /* ************************ STATS ***************************** */
@@ -195,6 +105,31 @@ main {
   text-transform: uppercase;
   color: var(--grey);
   margin-top: 6px;
+}
+
+/* ************************ RECAP ***************************** */
+
+.recap-new {
+  font-family: "Share Tech Mono";
+  color: var(--grey);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+#recap {
+  padding: 24px;
+}
+
+#mission-recap {
+  padding: 24px;
+}
+
+#whats-next {
+  padding: 10px 24px;
+}
+
+#whats-next p {
+  padding-top: 10px;
 }
 
 /* ************************ TIMELINE ***************************** */
