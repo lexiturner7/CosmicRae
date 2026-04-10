@@ -62,8 +62,9 @@ main {
 #clock-label {
   display: flex;
   justify-content: center;
+  padding-left: 30px;
   font-family: "Share Tech Mono";
-  word-spacing: 2.2em;
+  word-spacing: 2em;
 }
 
 #live-mission-badge {

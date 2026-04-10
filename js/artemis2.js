@@ -23,22 +23,20 @@ for (let i = 0; i < 140; i++) {
 
 // ******************** ELAPSED TIME CLOCK ********************
 
-const start = new Date("2026-04-01T22:35:00Z");
+const end = new Date("2026-04-11T00:07:00Z");
 
 function getElapsedTime() {
-  const end = new Date();
-  const elapsed = end.getTime() - start.getTime();
+  const start = new Date();
+  const elapsed = Math.abs(start.getTime() - end.getTime());
   const seconds = Math.floor((elapsed / 1000) % 60);
   const minutes = Math.floor((elapsed / (1000 * 60)) % 60);
   const hours = Math.floor((elapsed / (1000 * 60 * 60)) % 24);
-  const days = Math.floor(elapsed / (1000 * 60 * 60 * 24));
 
-  const d = String(days);
   const h = String(hours).padStart(2, "0");
   const m = String(minutes).padStart(2, "0");
   const s = String(seconds).padStart(2, "0");
 
-  document.getElementById("clock").textContent = `${d} : ${h} : ${m} : ${s}`;
+  document.getElementById("clock").textContent = `-${h} : ${m} : ${s}`;
 }
 
 getElapsedTime();
