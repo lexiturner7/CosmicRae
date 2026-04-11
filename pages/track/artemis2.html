@@ -36,147 +36,13 @@
       <!-- *************** HERO ***************** -->
       <section id="artemis-hero">
         <div id="hero-left">
-          <div id="live-mission-badge" class="track-badge">
-            <div class="blinking-dot"></div>
-            <span>Live Mission</span>
-          </div>
           <h1 id="artemis-headline">Artemis II</h1>
           <h3 id="artemis-subtitle">Humanity Returns to the Moon!</h3>
           <h4 id="artemis-tagline">
             Four astronauts are making history as the first crewed lunar mission
-            since Apollo 17 in 1972. <br />
-            Follow every moment of their 10-day journey around the Moon and
-            back!
+            since Apollo 17 in 1972.
           </h4>
         </div>
-        <div id="hero-right">
-          <h2 style="color: var(--green)">Splashdown Countdown Clock</h2>
-          <div id="mission-elapsed-time">
-            <div id="clock"></div>
-            <div id="clock-label">Hours Minutes Seconds</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- *************** ORION TRACKER ***************** -->
-      <section id="live-orion-tracker">
-        <div id="tracker-svg-wrap">
-          <svg
-            id="tracker-svg"
-            viewBox="0 0 1000 200"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <!-- Earth -->
-            <circle
-              cx="60"
-              cy="100"
-              r="36"
-              fill="#1e3a8a"
-              stroke="rgba(59,130,246,0.5)"
-              stroke-width="1"
-            />
-            <ellipse
-              cx="52"
-              cy="92"
-              rx="10"
-              ry="7"
-              fill="rgba(34,197,94,0.3)"
-              transform="rotate(-20,52,92)"
-            />
-            <text
-              x="60"
-              y="160"
-              text-anchor="middle"
-              fill="white"
-              font-size="14"
-              font-family="monospace"
-              letter-spacing="2"
-            >
-              EARTH
-            </text>
-
-            <!-- Moon -->
-            <circle
-              cx="940"
-              cy="100"
-              r="26"
-              fill="#374151"
-              stroke="rgba(156,163,175,0.4)"
-              stroke-width="1"
-            />
-            <circle cx="932" cy="94" r="4" fill="rgba(0,0,0,0.15)" />
-            <text
-              x="940"
-              y="150"
-              text-anchor="middle"
-              fill="white"
-              font-size="14"
-              font-family="monospace"
-              letter-spacing="2"
-            >
-              MOON
-            </text>
-
-            <!-- Trajectory arc -->
-            <path
-              id="orion-path"
-              d="M96,100 Q500,20 914,100"
-              fill="none"
-              stroke="rgba(74,222,128,0.2)"
-              stroke-width="3"
-              stroke-dasharray="4 6"
-            />
-
-            <!-- Orion dot -->
-            <circle id="orion-dot" cx="96" cy="100" r="7" fill="#4ade80" />
-            <circle
-              id="orion-ring"
-              cx="96"
-              cy="100"
-              r="13"
-              fill="none"
-              stroke="rgba(74,222,128,0.3)"
-              stroke-width="1"
-            />
-            <text
-              id="orion-label"
-              x="96"
-              y="78"
-              text-anchor="middle"
-              fill="#4ade80"
-              font-size="14"
-              font-family="monospace"
-            >
-              ORION
-            </text>
-          </svg>
-        </div>
-
-        <div id="live-orion-badge" class="track-badge">
-          <div class="blinking-dot"></div>
-          <span>Live Orion Tracker</span>
-        </div>
-
-        <div id="tracker-stats">
-          <div class="tracker-stat">
-            <div id="distance" class="tracker-stat-value"></div>
-            <div class="tracker-stat-label">Distance from Earth</div>
-          </div>
-          <div class="tracker-divider"></div>
-          <div class="tracker-stat">
-            <div id="speed" class="tracker-stat-value"></div>
-            <div class="tracker-stat-label">Current Speed</div>
-          </div>
-          <div class="tracker-divider"></div>
-          <div class="tracker-stat">
-            <div id="distance-remaining" class="tracker-stat-value"></div>
-            <div class="tracker-stat-label">Distance to Moon</div>
-          </div>
-        </div>
-        <p id="tracker-note">
-          Position based on NASA pre-flight ephemeris data. For real-time
-          telemetry visit NASA's AROW.
-        </p>
       </section>
 
       <!-- *************** STATS ***************** -->
@@ -209,6 +75,52 @@
         <div id="launch-site">
           <span class="stat-head">LC-39B</span>
           <span class="stat-tag">Launch Pad</span>
+        </div>
+      </section>
+
+      <!-- *************** MISSION OVERVIEW / WHATS NEXT ***************** -->
+
+      <section id="recap">
+        <h3 style="color: var(--green)">Splashdown!</h3>
+        <div id="mission-recap" class="recap-new">
+          Artemis II has landed! On April 10, 2026, Commander Reid Wiseman,
+          Pilot Victor Glover, and Mission Specialists Christina Koch and Jeremy
+          Hansen safely splashed down in the Pacific Ocean off the coast of San
+          Diego, CA. For the first time since Apollo 17 in 1972, humans flew
+          around the Moon, and this crew did it better than anyone ever has.
+          They traveled over 695,000 total miles, broke the record for the
+          farthest any humans have ever traveled from Earth, and proved that
+          Orion is ready to take future crews all the way back to the lunar
+          surface.
+        </div>
+        <div id="whats-next">
+          <h4>What's Next?</h4>
+          <p class="recap-new">
+            Artemis III, scheduled for 2027, will launch into Earth orbit to
+            practice docking with the lunar landers being built by SpaceX and
+            Blue Origin. Think of it like a practice run before the real thing.
+            They will also test the brand new spacesuits that future Moon
+            walkers will wear on the lunar surface. <br />
+            Artemis IV (2028) is the big one! This will be the first crewed Moon
+            landing since Apollo 17 in 1972, more than 50 years ago! NASA is
+            even hoping to attempt a second lunar landing that same year with
+            Artemis V.<br />
+            After that, NASA has announced plans to send astronauts to the Moon
+            about twice a year, every year. <br />
+            Here's where things get really exciting...<br />
+            <span style="font-weight: bold">The Moon Base.</span> NASA's
+            ultimate goal is not just to visit the Moon, but to actually stay
+            there. The plan is to bild a real base near the lunar south pole,
+            with habitats where astronauts can live, rovers to drive around and
+            explore, and power systems to keep everything running through the
+            long, freezing lunar nights. By the early 2030's, astronauts could
+            be living on the Moon for weeks or even months at a time! Maybe you
+            will even be one of those astronauts living on the moon someday!<br />
+            Everything that happens from here, starting with what Artemis II
+            proved, is one more step toward that goal. The Moon is not just a
+            destination anymore. It is where we are learning to live and will
+            hopefully in the future be a stepping stone to Mars and beyond!
+          </p>
         </div>
       </section>
 
