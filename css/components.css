@@ -32,7 +32,7 @@
     inset 0 1px 0 rgba(var(--gold-rgb), 0.1);
 }
 
-.card-learn {
+.card-lab {
   background: rgba(var(--blue-rgb), 0.06);
   border: 1px solid rgba(var(--blue-rgb), 0.4);
   box-shadow:
@@ -67,7 +67,7 @@
   border: 1px solid rgba(var(--gold-rgb), 0.3);
   color: rgba(var(--gold-rgb), 0.9);
 }
-.badge-learn {
+.badge-lab {
   background: rgba(var(--blue-rgb), 0.15);
   border: 1px solid rgba(var(--blue-rgb), 0.3);
   color: rgba(var(--blue-rgb), 0.9);

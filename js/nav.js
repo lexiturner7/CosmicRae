@@ -17,7 +17,7 @@ document.getElementById("navbar").innerHTML = `
         <a href="/pages/discover/discover.html" id="discovernav">Discover</a>
       </li>
       <li>
-        <a href="/pages/learn/learn.html" id="learnnav">Lab</a>
+        <a href="/pages/lab/lab.html" id="labnav">Lab</a>
       </li>
     </ul>
   </nav>`;
