@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-26M6TWP9GQ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-26M6TWP9GQ");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CosmicRae — Lab</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/icons/favicon.ico"
+    />
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/nav.css" />
+    <link rel="stylesheet" href="../../css/components.css" />
+    <link rel="stylesheet" href="../../css/myth-fact.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div id="stars-layer"></div>
+    <main id="app">
+      <!-- LAUNCH SCREEN -->
+      <section id="launch-screen">
+        <div id="progress-indicator"></div>
+        <h3>Space Myths vs Facts</h3>
+        <h5 id="launch-screen-tagline">
+          Can you identify which statements are myths and which are facts?
+          <br />
+          Test your knowledge on your own or in teams. <br />
+          Play the quiz game or explore and guess myths at your own pace.
+        </h5>
+        <!-- step 1: play vs explore -->
+        <section id="play-explore-selection">
+          <button type="button" id="play" class="game-card">
+            <div id="play-card">
+              <h5>Play</h5>
+              <p>Answer questions, beat the timer, earn points</p>
+              <p>Quiz Game</p>
+            </div>
+          </button>
+          <button type="button" id="explore" class="game-card">
+            <div id="explore-game-card">
+              <h5>Explore</h5>
+              <p>Browse and guess myths and facts at your own pace, no timer</p>
+              <p>Gallery</p>
+            </div>
+          </button>
+        </section>
+        <!-- step 2: solo vs group vs classroom -->
+
+        <section id="solo-group-classroom-selection" class="hidden">
+          <h4>Who's Playing?</h4>
+          <button type="button" id="solo" class="game-card">
+            <div id="solo-game-card">
+              <h5>Just Me</h5>
+              <p>Solo play, personal best score tracking</p>
+            </div>
+          </button>
+          <button type="button" id="group" class="game-card">
+            <div id="group-game-card">
+              <h5>Group</h5>
+              <p>Teams compete on one screen</p>
+            </div>
+          </button>
+          <button type="button" id="classroom" class="game-card">
+            <div id="classroom-game-card">
+              <h5>Classroom</h5>
+              <p>Teacher-lead, projector display</p>
+            </div>
+          </button>
+        </section>
+
+        <!-- enter team names -->
+
+        <section id="enter-team-names" class="hidden">
+          <div id="team-names">
+            <h5>Name Your Teams</h5>
+            <input type="text" id="team-one" value="Team Nebula" required />
+            <input type="text" id="team-two" value="Team Pulsar" required />
+            <input
+              type="text"
+              id="team-three"
+              value="Team Saturn"
+              class="hidden"
+            />
+            <input
+              type="text"
+              id="team-four"
+              value="Team Neptune"
+              class="hidden"
+            />
+            <button type="button" id="add-team-btn">+ Add Team</button>
+            <button type="button" id="remove-team-btn" class="hidden">
+              - Remove Team
+            </button>
+          </div>
+        </section>
+
+        <!-- step 3: level select -->
+        <section id="level-select" class="hidden">
+          <h4>Pick Your Level</h4>
+          <h5>Start easy or go straight to the hard stuff</h5>
+          <button type="button" id="explorer-level-card" class="level-card">
+            <div id="explorer-level">
+              <h3>1</h3>
+              <h5>Explorer</h5>
+              <p>Great for beginners</p>
+            </div>
+          </button>
+          <button type="button" id="astronaut-level-card" class="level-card">
+            <div id="astronaut-level">
+              <h3>2</h3>
+              <h5>Astronaut</h5>
+              <p>Getting tricky</p>
+            </div>
+          </button>
+          <button type="button" id="scientist-level-card" class="level-card">
+            <div id="scientist-level">
+              <h3>3</h3>
+              <h5>Scientist</h5>
+              <p>Expert level</p>
+            </div>
+          </button>
+        </section>
+
+        <!-- BUTTONS -->
+        <button type="button" id="back-btn">Back</button>
+        <button type="button" id="continue-btn">Continue</button>
+        <button type="button" id="launch-game-btn" class="hidden">
+          Launch Game!
+        </button>
+      </section>
+
+      <!-- QUIZ TAB -->
+      <section id="quiz-screen" class="hidden">
+        <div id="quiz-header">
+          <div id="level-badge"></div>
+          <div id="timer"></div>
+          <div id="solo-score"></div>
+          <div id="progress-bar"></div>
+        </div>
+        <div id="question-card">
+          <div id="statement"></div>
+          <div id="team-answer-selection" class="hidden"></div>
+          <div id="answer-selection">
+            <button type="button" class="answer-btn myth" data-answer="myth">
+              MYTH
+            </button>
+            <button type="button" class="answer-btn fact" data-answer="fact">
+              FACT
+            </button>
+          </div>
+          <button type="button" id="submit-btn" class="hidden">Submit</button>
+        </div>
+        <div id="team-scoreboard" class="hidden">
+          <h4>SCOREBOARD</h4>
+          <div id="ranking"></div>
+        </div>
+      </section>
+
+      <!-- REVEAL SCREEN -->
+
+      <section id="reveal-screen" class="hidden">
+        <div id="check-x"></div>
+        <!-- correct/wrong indicator -->
+        <div id="answer-correct-incorrect"></div>
+        <div id="repeat-statement"></div>
+        <div id="its-a-myth-fact"></div>
+        <!-- explanation -->
+        <div id="answer-explanation"></div>
+        <!-- score -->
+        <div id="points-awarded"></div>
+        <!-- next question button -->
+        <button type="button" id="next-question">NEXT QUESTION</button>
+      </section>
+
+      <!-- RESULTS SCREEN -->
+      <section id="results-screen" class="hidden">
+        <div id="winner-animation" class="hidden"></div>
+        <div id="final-solo-score-animation" class="hidden"></div>
+        <!-- final score, personal best -->
+        <div id="solo-score-banner" class="hidden">
+          <h4>Final Score!</h4>
+          <h2 id="final-solo-score"></h2>
+        </div>
+
+        <div id="winner-banner" class="hidden">
+          <h4>WINNER!</h4>
+          <h2 id="winning-team"></h2>
+          <h4 id="winning-score"></h4>
+        </div>
+        <!-- scoreboard -->
+        <div id="final-scoreboard" class="hidden">
+          <h4>FINAL SCOREBOARD</h4>
+          <div id="final-ranking"></div>
+        </div>
+        <!-- stats -->
+        <div id="final-stats">
+          <div id="number-correct"></div>
+          <div id="accuracy"></div>
+          <div id="personal-best"></div>
+        </div>
+        <!-- play again, explore gallery -->
+        <div id="result-screen-btns">
+          <button type="button" id="play-again">PLAY AGAIN</button>
+          <button type="button" id="explore-btn">EXPLORE</button>
+        </div>
+      </section>
+
+      <!-- GALLERY SCREEN -->
+      <section id="gallery-screen" class="hidden">
+        <div id="gallery-header">
+          <h3 id="gallery-title">Bust the Myths. Confirm the Facts.</h3>
+          <h5 id="gallery-subtitle">Click each card to guess the answer</h5>
+          <div id="viewed-count"></div>
+        </div>
+        <div id="gallery-filter-buttons">
+          <button type="button" class="filter-buttons" data-level="all">
+            All
+          </button>
+          <button type="button" class="filter-buttons" data-level="explorer">
+            Explorer (Beginner)
+          </button>
+          <button type="button" class="filter-buttons" data-level="astronaut">
+            Astronaut (Tricky)
+          </button>
+          <button type="button" class="filter-buttons" data-level="scientist">
+            Scientist (Expert)
+          </button>
+        </div>
+        <div id="level-cards">
+          <div id="level-explorer" class="level-cards">
+            <h5>Explorer (Beginner)</h5>
+            <div id="explorer-level-statements"></div>
+          </div>
+
+          <div id="level-astronaut" class="level-cards">
+            <h5>Astronaut (Tricky)</h5>
+            <div id="astronaut-level-statements"></div>
+          </div>
+
+          <div id="level-scientist" class="level-cards">
+            <h5>Scientist (Expert)</h5>
+            <div id="scientist-level-statements"></div>
+          </div>
+        </div>
+
+        <button type="button" id="back-to-menu-button" data-menu="menu">
+          Back to Game Menu
+        </button>
+      </section>
+
+      <!-- lightbox pop-up -->
+      <section id="lightbox-screen" class="hidden">
+        <div id="lightbox">
+          <div id="level-label"></div>
+          <div id="level-statement"></div>
+          <div id="light-box-myth-fact-buttons">
+            <button type="button" id="myth-lightbox-button" data-answer="myth">
+              Myth
+            </button>
+            <button type="button" id="fact-lightbox-button" data-answer="fact">
+              Fact
+            </button>
+          </div>
+
+          <div id="lightbox-reveal" class="hidden">
+            <div id="lightbox-answer"></div>
+            <div id="lightbox-explanation"></div>
+          </div>
+
+          <div id="next-close-buttons">
+            <button type="button" id="next-lightbox">Next</button>
+            <button type="button" id="close-lightbox">Close</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="footer"></div>
+    <script src="../../js/nav.js"></script>
+    <script src="../../js/footer.js"></script>
+    <script src="../../js/myth-fact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,424 @@
+[
+  {
+    "id": 1,
+    "statement": "The sun is on fire.",
+    "answer": "myth",
+    "explanation": "The sun is not burning like a fire. It runs on nuclear fusion, which means hydrogen atoms smash together and turn into helium, releasing huge amounts of energy. Fire needs oxygen to burn, but there is no oxygen in space.",
+    "difficulty": 1
+  },
+  {
+    "id": 2,
+    "statement": "You would freeze instantly in space without a suit.",
+    "answer": "myth",
+    "explanation": "Space is extremely cold but freezing actually takes time because there is almost nothing in space to pull heat away from your body. The bigger immediate danger would be the lack of air and the pressure change.",
+    "difficulty": 1
+  },
+  {
+    "id": 3,
+    "statement": "The Earth is perfectly round like a ball.",
+    "answer": "myth",
+    "explanation": "Earth is slightly squashed at the poles and bulges a little at the equator because of how fast it spins. Scientists call this shape an oblate spheroid.",
+    "difficulty": 1
+  },
+  {
+    "id": 4,
+    "statement": "Stars twinkle because they are blinking.",
+    "answer": "myth",
+    "explanation": "Stars do not actually blink. Their light passes through layers of moving air in Earth's atmosphere, which bends the light and makes it look like it is flickering. In space, stars look completely steady.",
+    "difficulty": 1
+  },
+  {
+    "id": 5,
+    "statement": "The sun rises in the east and sets in the west.",
+    "answer": "fact",
+    "explanation": "Earth spins from west to east, which makes the sun appear to travel from east to west across the sky every day. Every planet and moon you can see in the sky follows this same path.",
+    "difficulty": 1
+  },
+  {
+    "id": 6,
+    "statement": "Saturn is the only planet with rings.",
+    "answer": "myth",
+    "explanation": "Saturn has the most famous rings but Jupiter, Uranus, and Neptune have rings too. Saturn's rings are just much bigger and easier to see from Earth.",
+    "difficulty": 1
+  },
+  {
+    "id": 7,
+    "statement": "Astronauts float in space because there is no gravity.",
+    "answer": "myth",
+    "explanation": "Gravity reaches everywhere in space, it just gets weaker the farther you get from a massive object. Astronauts on the space station float because they are in a continuous freefall closely around Earth, not because gravity disappeared. That feeling of weightlessness is called microgravity ('micro' means very small) and it happens any time you are in freefall with nothing to push back on you, like the split second at the top of a roller coaster drop. On the way to the Moon, astronauts experience microgravity because gravity becomes less and less the further away from Earth the astronauts get. Astronauts will sometimes call this 'Zero-G' or 'Zero-Gravity' because it describes the <span style='font-weight: bold;'>feeling<span> of weightlessness, not the absence of gravity itself.",
+    "difficulty": 1
+  },
+  {
+    "id": 8,
+    "statement": "The moon makes its own light.",
+    "answer": "myth",
+    "explanation": "The moon does not glow on its own. It acts like a giant mirror, reflecting sunlight back toward Earth. On a full moon night you are actually seeing sunlight bouncing off the lunar surface.",
+    "difficulty": 1
+  },
+  {
+    "id": 9,
+    "statement": "Space is completely empty.",
+    "answer": "myth",
+    "explanation": "Space looks empty but it is actually full of things. There are gas clouds, dust, radiation, magnetic fields, and tiny particles called cosmic rays zooming around everywhere.",
+    "difficulty": 1
+  },
+  {
+    "id": 10,
+    "statement": "The sun is yellow.",
+    "answer": "myth",
+    "explanation": "The sun is actually white. It only looks yellow or orange from Earth because our atmosphere scatters its light. From space, astronauts see a bright white star.",
+    "difficulty": 1
+  },
+  {
+    "id": 11,
+    "statement": "All planets in our solar system travel around the sun.",
+    "answer": "fact",
+    "explanation": "Every planet in our solar system orbits the sun because the sun contains about 99 percent of all the mass in the solar system. Its gravity is so powerful that it keeps everything from Mercury all the way out to Neptune in orbit.",
+    "difficulty": 1
+  },
+  {
+    "id": 12,
+    "statement": "The moon has earthquakes.",
+    "answer": "fact",
+    "explanation": "The moon has moonquakes. They are caused by the gravitational pull of Earth stretching and squeezing the moon slightly, and also by meteorites hitting the surface. Apollo astronauts left instruments called seismometers on the moon to detected them. Seismometers are also used here to detect earthquakes on Earth.",
+    "difficulty": 1
+  },
+  {
+    "id": 13,
+    "statement": "Neptune is the farthest planet from the sun.",
+    "answer": "fact",
+    "explanation": "Neptune is the eighth and farthest planet from the sun in our solar system. It is so far away that sunlight takes about four hours to reach it, compared to just eight minutes to reach Earth.",
+    "difficulty": 1
+  },
+  {
+    "id": 14,
+    "statement": "Comets are made of rock and metal.",
+    "answer": "myth",
+    "explanation": "Comets are mostly made of ice, dust, and rocky material. When a comet gets close to the sun, the ice turns into gas and creates the glowing tail you can see from Earth.",
+    "difficulty": 1
+  },
+  {
+    "id": 15,
+    "statement": "The Great Wall of China is visible from space.",
+    "answer": "myth",
+    "explanation": "Even though the Great Wall is very long, it is not very wide. Astronauts in orbit have confirmed it is too thin to see with the naked eye from space, just like you cannot see a single hair from across a football field.",
+    "difficulty": 1
+  },
+  {
+    "id": 16,
+    "statement": "Mars has the largest volcano in the solar system.",
+    "answer": "fact",
+    "explanation": "Olympus Mons on Mars is about three times taller than Mount Everest and so wide it would cover the entire state of Arizona. It is a shield volcano that built up slowly over billions of years.",
+    "difficulty": 1
+  },
+  {
+    "id": 17,
+    "statement": "A day on Venus is longer than a year on Venus.",
+    "answer": "fact",
+    "explanation": "Venus rotates so slowly that it takes 243 Earth days to spin once, but only 225 Earth days to travel around the sun. That means one Venus day is actually longer than one Venus year.",
+    "difficulty": 1
+  },
+  {
+    "id": 18,
+    "statement": "The moon is getting farther from Earth every year.",
+    "answer": "fact",
+    "explanation": "The moon moves about 3.8 centimeters farther from Earth each year. This is because of the gravitational interaction between Earth and the moon, similar to how two magnets can push each other apart.",
+    "difficulty": 1
+  },
+  {
+    "id": 19,
+    "statement": "All stars are the same color.",
+    "answer": "myth",
+    "explanation": "Stars come in many colors including red, orange, yellow, white, and blue. The color tells you the temperature of the star. Blue stars are the hottest and red stars are the coolest.",
+    "difficulty": 1
+  },
+  {
+    "id": 20,
+    "statement": "There is no sound in space.",
+    "answer": "fact",
+    "explanation": "Sound needs particles to travel through, like air or water. Space is nearly a perfect vacuum with almost no particles, so sound waves have nothing to move through. Explosions in space would be completely silent.",
+    "difficulty": 1
+  },
+
+  {
+    "id": 21,
+    "statement": "Black holes are giant vacuum cleaners that suck everything in.",
+    "answer": "myth",
+    "explanation": "Black holes only pull in objects that come very close to them. If our sun magically became a black hole right now, Earth would just keep orbiting it normally because the gravity at our distance would stay the same.",
+    "difficulty": 2
+  },
+  {
+    "id": 22,
+    "statement": "The asteroid belt between Mars and Jupiter is a dangerous maze of rocks.",
+    "answer": "myth",
+    "explanation": "Movies make the asteroid belt look packed and dangerous but the rocks are spread across such a huge area of space that spacecraft fly through it easily. The average distance between asteroids is about 600,000 miles.",
+    "difficulty": 2
+  },
+  {
+    "id": 23,
+    "statement": "Pluto is a planet.",
+    "answer": "myth",
+    "explanation": "Explanation: In 2006 the International Astronomical Union decided Pluto is a dwarf planet because it has not cleared other objects out of its orbital path around the sun. There are actually several other dwarf planets in our solar system.",
+    "difficulty": 2
+  },
+  {
+    "id": 24,
+    "statement": "Lightning cannot strike in space.",
+    "answer": "myth",
+    "explanation": "Lightning as we know it requires an atmosphere, but space weather includes powerful electrical phenomena. Planets like Jupiter have lightning storms far larger and more powerful than anything on Earth.",
+    "difficulty": 2
+  },
+  {
+    "id": 25,
+    "statement": "The Milky Way is the only galaxy in the universe.",
+    "answer": "myth",
+    "explanation": "Scientists estimate there are at least two trillion galaxies in the observable universe. The Milky Way is just one of them, containing about 200 to 400 billion stars.",
+    "difficulty": 2
+  },
+  {
+    "id": 26,
+    "statement": "Astronauts on the space station experience sixteen sunrises every day.",
+    "answer": "fact",
+    "explanation": "The International Space Station orbits Earth about once every 90 minutes. Because it circles the planet so fast, the crew sees the sun rise and set sixteen times in a single 24 hour period.",
+    "difficulty": 2
+  },
+  {
+    "id": 27,
+    "statement": "Venus is the hottest planet in the solar system.",
+    "answer": "fact",
+    "explanation": "Even though Mercury is closer to the sun, Venus is hotter because of its thick atmosphere full of carbon dioxide that traps heat like a blanket. Surface temperatures on Venus reach about 900 degrees Fahrenheit.",
+    "difficulty": 2
+  },
+  {
+    "id": 28,
+    "statement": "A full moon causes more crime and strange behavior in people.",
+    "answer": "myth",
+    "explanation": "Many studies have looked at this and found no real connection between the full moon and human behavior. The idea is a very old superstition that has not held up to scientific investigation.",
+    "difficulty": 2
+  },
+  {
+    "id": 29,
+    "statement": "The International Space Station is farther from Earth than the moon",
+    "answer": "myth",
+    "explanation": "The ISS orbits about 250 miles above Earth's surface. The moon is about 239,000 miles away. The space station is actually quite close to Earth compared to the moon.",
+    "difficulty": 2
+  },
+  {
+    "id": 30,
+    "statement": "Meteorites are hot when they land on Earth.",
+    "answer": "myth",
+    "explanation": "Meteorites are actually cold when they land. The fiery streak you see in the sky only lasts a few seconds as the outer layer burns off. The inside of the rock has been frozen in space for billions of years and does not have time to heat up all the way through.",
+    "difficulty": 2
+  },
+  {
+    "id": 31,
+    "statement": "Jupiter has a storm that has lasted for hundreds of years.",
+    "answer": "fact",
+    "explanation": "The Great Red Spot on Jupiter is a storm larger than Earth that has been raging for at least 350 years. Scientists first observed it in the 1600s and it is still going today, though it has been slowly shrinking.",
+    "difficulty": 2
+  },
+  {
+    "id": 32,
+    "statement": "Water has been found on the moon.",
+    "answer": "fact",
+    "explanation": "Scientists have confirmed there is water ice hiding in permanently shadowed craters near the moon's poles. This discovery is exciting because future astronauts might be able to use it for drinking water and even rocket fuel.",
+    "difficulty": 2
+  },
+  {
+    "id": 33,
+    "statement": "All eight planets in our solar system rotate in the same direction. ",
+    "answer": "myth",
+    "explanation": "Venus rotates backwards compared to most other planets, and Uranus is tilted so far on its side that it essentially rolls around the sun. Scientists think giant collisions early in the solar system caused these unusual rotations.",
+    "difficulty": 2
+  },
+  {
+    "id": 34,
+    "statement": "Space suits protect astronauts from temperature changes of over 500 degrees.",
+    "answer": "fact",
+    "explanation": "In space an astronaut can go from negative 250 degrees Fahrenheit in shadow to positive 250 degrees in sunlight within moments. Space suits are engineered to handle this extreme range and keep the person inside comfortable and safe.",
+    "difficulty": 2
+  },
+  {
+    "id": 35,
+    "statement": "The moon has an atmosphere.",
+    "answer": "myth",
+    "explanation": "The moon has an extremely thin layer of gases called an exosphere but it is nothing like Earth's atmosphere. It is so thin that the molecules almost never collide with each other, and it offers no protection from space radiation or meteorites.",
+    "difficulty": 2
+  },
+  {
+    "id": 36,
+    "statement": "Humans have sent spacecraft to every planet in the solar system.",
+    "answer": "fact",
+    "explanation": "Every planet from Mercury to Neptune has been visited by at least one spacecraft. The Voyager probes flew past the outer planets in the 1970s and 1980s and are still traveling through space today.",
+    "difficulty": 2
+  },
+  {
+    "id": 37,
+    "statement": "The universe is about 6,000 years old.",
+    "answer": "myth",
+    "explanation": "Scientists have measured the age of the universe using multiple methods including studying the oldest stars and measuring the cosmic microwave background radiation. The universe is approximately 13.8 billion years old.",
+    "difficulty": 2
+  },
+  {
+    "id": 38,
+    "statement": "Astronauts lose bone density in space.",
+    "answer": "fact",
+    "explanation": "Without gravity constantly working against your muscles and bones, your body starts to think it does not need to be as strong. Astronauts can lose about one to two percent of their bone density per month in space, which is why they exercise for about two hours every day on the ISS.",
+    "difficulty": 2
+  },
+  {
+    "id": 39,
+    "statement": "The sun will last forever.",
+    "answer": "myth",
+    "explanation": "The sun has enough hydrogen fuel for about another five billion years. After that it will expand into a red giant star, swallowing Mercury and Venus, before eventually collapsing into a small dense star called a white dwarf.",
+    "difficulty": 2
+  },
+  {
+    "id": 40,
+    "statement": "Europa, one of Jupiter's moons, might have a liquid water ocean.",
+    "answer": "fact",
+    "explanation": "Scientists believe Europa has a global ocean of liquid saltwater beneath its icy crust, kept liquid by heat from tidal forces caused by Jupiter's enormous gravity. This makes it one of the most exciting places to search for life in our solar system.",
+    "difficulty": 2
+  },
+
+  {
+    "id": 41,
+    "statement": "Light always travels at the same speed.",
+    "answer": "myth",
+    "explanation": "Light travels at its maximum speed only in a vacuum. When it passes through materials like water or glass it slows down. This slowing is what causes light to bend when it moves from one material to another, which is how lenses and prisms work.",
+    "difficulty": 3
+  },
+  {
+    "id": 42,
+    "statement": "Time passes faster in stronger gravity.",
+    "answer": "myth",
+    "explanation": "Time actually passes more slowly in stronger gravitational fields. This is called gravitational time dilation and was predicted by Einstein. Clocks on GPS satellites have to be corrected for this effect because they tick slightly faster than clocks on Earth's surface.",
+    "difficulty": 3
+  },
+  {
+    "id": 43,
+    "statement": "The universe is expanding in all directions.",
+    "answer": "fact",
+    "explanation": "Astronomers discovered in 1929 that galaxies are moving away from each other in every direction. In 1998 scientists discovered this expansion is actually speeding up, driven by a mysterious force called dark energy that makes up about 68 percent of the universe.",
+    "difficulty": 3
+  },
+  {
+    "id": 44,
+    "statement": "A neutron star is less dense than Earth.",
+    "answer": "myth",
+    "explanation": "Neutron stars are the collapsed cores of massive stars and are almost unimaginably dense. A teaspoon of neutron star material would weigh about a billion tons on Earth. They pack more mass than our entire sun into a sphere about the size of a city.",
+    "difficulty": 3
+  },
+  {
+    "id": 45,
+    "statement": "The Voyager 1 spacecraft has left our solar system.",
+    "answer": "fact",
+    "explanation": "Voyager 1 crossed into interstellar space in 2012, making it the first human made object to leave the solar system. It is now more than 14 billion miles from the sun and still sending data back to Earth, though the signal takes about 22 hours to arrive.",
+    "difficulty": 3
+  },
+  {
+    "id": 46,
+    "statement": "Dark matter can be seen with powerful telescopes.",
+    "answer": "myth",
+    "explanation": "Dark matter does not interact with light at all, which means it cannot be seen directly no matter how powerful your telescope is. Scientists know it exists because of the gravitational effects it has on visible matter like galaxies, which spin in ways that only make sense if there is extra invisible mass present.",
+    "difficulty": 3
+  },
+  {
+    "id": 47,
+    "statement": "Mars once had liquid water on its surface.",
+    "answer": "fact",
+    "explanation": "Evidence from multiple Mars rovers and orbiters shows ancient riverbeds, lake beds, and minerals that only form in liquid water. Scientists believe Mars had a warmer, wetter climate billions of years ago before its atmosphere thinned out.",
+    "difficulty": 3
+  },
+  {
+    "id": 48,
+    "statement": "A black hole has a defined surface you could land on.",
+    "answer": "myth",
+    "explanation": "Black holes do not have a solid surface. The point of no return around a black hole is called the event horizon, which is not a physical boundary but rather the distance at which gravity becomes too strong for anything including light to escape.",
+    "difficulty": 3
+  },
+  {
+    "id": 49,
+    "statement": "The Andromeda galaxy is on a collision course with the Milky Way.",
+    "answer": "fact",
+    "explanation": "Andromeda and the Milky Way are moving toward each other at about 70 miles per second and are expected to collide in about 4.5 billion years. Because galaxies are mostly empty space, stars rarely collide directly, but the galaxies will eventually merge into one giant elliptical galaxy.",
+    "difficulty": 3
+  },
+  {
+    "id": 50,
+    "statement": "Pulsars are stars that explode repeatedly.",
+    "answer": "myth",
+    "explanation": "Pulsars are rapidly spinning neutron stars that emit beams of radio waves from their poles. As they spin, the beam sweeps across space like a lighthouse beam, which is why they appear to pulse with extreme regularity when the beam points toward Earth.",
+    "difficulty": 3
+  },
+  {
+    "id": 51,
+    "statement": "The cosmic microwave background radiation is leftover energy from the Big Bang.",
+    "answer": "fact",
+    "explanation": "About 380,000 years after the Big Bang, the universe cooled enough for atoms to form and light to travel freely for the first time. That ancient light has been stretched by the expansion of the universe into microwave radiation and can still be detected today in every direction you look.",
+    "difficulty": 3
+  },
+  {
+    "id": 52,
+    "statement": "Spacecraft can travel faster than light.",
+    "answer": "myth",
+    "explanation": "According to Einstein's theory of special relativity, nothing with mass can reach the speed of light because it would require infinite energy. As an object accelerates toward light speed its mass effectively increases, requiring more and more energy to go faster.",
+    "difficulty": 3
+  },
+  {
+    "id": 53,
+    "statement": "Titan, Saturn's largest moon, has lakes and rivers on its surface.",
+    "answer": "fact",
+    "explanation": "Titan has a full liquid cycle similar to Earth's water cycle, but instead of water its lakes and rivers are filled with liquid methane and ethane. It is the only other world in our solar system besides Earth known to have stable liquid on its surface.",
+    "difficulty": 3
+  },
+  {
+    "id": 54,
+    "statement": "The sun is the largest star in the universe.",
+    "answer": "myth",
+    "explanation": "The sun is actually a medium sized star. The largest known star, UY Scuti, has a radius about 1,700 times larger than the sun. If UY Scuti replaced our sun, its surface would extend past the orbit of Jupiter.",
+    "difficulty": 3
+  },
+  {
+    "id": 55,
+    "statement": "Quantum entanglement can be used to send information faster than light.",
+    "answer": "myth",
+    "explanation": "When two particles are entangled, measuring one instantly affects the other no matter how far apart they are. However you cannot choose or control what result you get, which means you cannot use entanglement to send a message faster than light.",
+    "difficulty": 3
+  },
+  {
+    "id": 56,
+    "statement": "The James Webb Space Telescope can see light from the first galaxies ever formed.",
+    "answer": "fact",
+    "explanation": "The James Webb Space Telescope is designed to detect infrared light from galaxies that formed just a few hundred million years after the Big Bang. Because light takes time to travel, looking at distant objects means looking back in time at the early universe.",
+    "difficulty": 3
+  },
+  {
+    "id": 57,
+    "statement": "Wormholes are proven to exist in space.",
+    "answer": "myth",
+    "explanation": "Wormholes are theoretically allowed by Einstein's equations of general relativity but there is no observational evidence that any actually exist. Even if they did, keeping one open and stable enough for travel would require a type of matter with negative energy that has never been observed.",
+    "difficulty": 3
+  },
+  {
+    "id": 58,
+    "statement": "The solar wind can affect technology on Earth.",
+    "answer": "fact",
+    "explanation": "The sun constantly streams charged particles called the solar wind toward Earth. During powerful solar storms this can disrupt satellites, cause radio blackouts, damage power grids, and produce auroras visible much farther from the poles than usual.",
+    "difficulty": 3
+  },
+  {
+    "id": 59,
+    "statement": "Every atom in your body was once inside a star.",
+    "answer": "fact",
+    "explanation": "All elements heavier than hydrogen and helium were created inside stars through nuclear fusion or during stellar explosions called supernovae. When those stars died they scattered their material into space, which eventually formed new stars, planets, and everything on them including you.",
+    "difficulty": 3
+  },
+  {
+    "id": 60,
+    "statement": "The observable universe is the same as the entire universe.",
+    "answer": "myth",
+    "explanation": "The observable universe is limited by how far light has had time to travel since the Big Bang. The actual universe could be vastly larger or even infinite beyond what we can observe. Some models suggest there are regions of the universe we will never be able to see no matter how advanced our telescopes become.",
+    "difficulty": 3
+  }
+]
