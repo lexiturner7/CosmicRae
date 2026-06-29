@@ -223,6 +223,11 @@ nav {
   background: rgba(34, 211, 238, 0.08);
 }
 
+#solo-group-classroom-selection .game-card h5 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
 /* ==================== TEAM NAME INPUTS ====================*/
 #enter-team-names {
   margin-top: 1.5rem;

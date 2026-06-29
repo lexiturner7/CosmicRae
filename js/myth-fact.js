@@ -120,7 +120,7 @@ function goToStep(step) {
     document.getElementById("continue-btn").classList.add("hidden");
     document.getElementById("launch-game-btn").classList.remove("hidden");
 
-    if (gameMode === "group" || gameMode === "classroom") {
+    if (gameMode === "group") {
       document.getElementById("enter-team-names").classList.remove("hidden");
     }
   }
@@ -142,7 +142,6 @@ document.getElementById("solo").addEventListener("click", function () {
   gameMode = "solo";
   document.getElementById("solo").classList.add("selected");
   document.getElementById("group").classList.remove("selected");
-  document.getElementById("classroom").classList.remove("selected");
   document.getElementById("enter-team-names").classList.add("hidden");
 });
 
@@ -151,16 +150,6 @@ document.getElementById("group").addEventListener("click", function () {
   gameMode = "group";
   document.getElementById("group").classList.add("selected");
   document.getElementById("solo").classList.remove("selected");
-  document.getElementById("classroom").classList.remove("selected");
-  document.getElementById("enter-team-names").classList.remove("hidden");
-});
-
-// classroom button
-document.getElementById("classroom").addEventListener("click", function () {
-  gameMode = "classroom";
-  document.getElementById("classroom").classList.add("selected");
-  document.getElementById("solo").classList.remove("selected");
-  document.getElementById("group").classList.remove("selected");
   document.getElementById("enter-team-names").classList.remove("hidden");
 });
 
@@ -396,7 +385,7 @@ function startGame() {
 // ******************** QUIZ SCREEN ********************
 
 function setupQuizScreen() {
-  const isGroup = gameMode === "group" || gameMode === "classroom";
+  const isGroup = gameMode === "group";
 
   if (isGroup) {
     document.getElementById("solo-score").classList.add("hidden");
@@ -492,14 +481,14 @@ function renderQuestion() {
   const answerBtns = document.querySelectorAll(".answer-btn");
   for (let i = 0; i < answerBtns.length; i++) {
     answerBtns[i].classList.remove("selected");
-    if (gameMode === "group" || gameMode === "classroom") {
+    if (gameMode === "group") {
       answerBtns[i].disabled = true;
     } else {
       answerBtns[i].disabled = false;
     }
   }
 
-  if (gameMode === "group" || gameMode === "classroom") {
+  if (gameMode === "group") {
     const teamBtns = document.querySelectorAll(".team-select-btn");
     for (let i = 0; i < teamBtns.length; i++) {
       teamBtns[i].classList.remove("selected");
@@ -537,7 +526,6 @@ function updateTimerColor() {
 function updateClockFill() {
   const clockFill = document.getElementById("clock-fill");
   if (!clockFill) return;
-
   const circumference = 263.9;
   const progress = timeRemaining / 60;
   const offset = circumference - progress * circumference;
@@ -588,7 +576,7 @@ document.querySelectorAll(".answer-btn").forEach(function (btn) {
     });
     btn.classList.add("selected");
 
-    if (gameMode === "group" || gameMode === "classroom") {
+    if (gameMode === "group") {
       if (selectedTeamIndex !== null && selectedAnswer !== null) {
         document.getElementById("submit-btn").disabled = false;
       }
@@ -742,6 +730,7 @@ function showSoloResults() {
   document
     .getElementById("final-solo-score-animation")
     .classList.remove("hidden");
+  document.getElementById("personal-best").classList.remove("hidden");
 
   document.getElementById("final-solo-score").textContent = score;
 
@@ -764,6 +753,7 @@ function showGroupResults() {
   document.getElementById("final-scoreboard").classList.remove("hidden");
   document.getElementById("winner-animation").classList.remove("hidden");
   document.getElementById("final-solo-score-animation").classList.add("hidden");
+  document.getElementById("personal-best").classList.add("hidden");
 
   const sorted = [...teams].sort(function (a, b) {
     return b.score - a.score;
