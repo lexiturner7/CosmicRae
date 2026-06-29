@@ -20,6 +20,7 @@ Because the universe is for everyone.
 - **Live ISS Tracker** — Real-time International Space Station position using Leaflet.js and Open Notify API, with live crew data
 - **Asteroid Watch** — NASA NeoWs API with Chart.js visualization, threat meter, filtering and sorting
 - **Planet Encyclopedia** — All 8 planets with kid-friendly content, embedded NASA 3D explorer, and sticky navigation
+- **Space Myths vs Facts** - Interactive quiz and exploration gallery with solo, group, and classroom modes; 60 NASA-verified entries across three difficulty levels
 - **Artemis II Tracker** — Live tracking of NASA's first crewed lunar mission since Apollo
 - **ISS Encyclopedia** — History, stats, timeline, and science of the International Space Station
 - **Constellation Background** — Real constellation data rendered on HTML5 Canvas with twinkling star animations
@@ -58,14 +59,15 @@ _This project is actively maintained and updated. New features added regularly._
 
 ## Pages
 
-| Section  | Page                | What it demonstrates                                                                    |
-| -------- | ------------------- | --------------------------------------------------------------------------------------- |
-| Explore  | APOD                | NASA API integration, date picker, async/await                                          |
-| Track    | ISS Tracker         | Real-time data, Leaflet.js, setInterval                                                 |
-| Track    | Asteroid Watch      | Complex nested JSON, Chart.js, filtering/sorting                                        |
-| Track    | Artemis II Tracker  | Ephemeris parsing, SVG path animation, vector magnitude math, real NASA trajectory data |
-| Discover | Planet Encyclopedia | Dynamic JSON rendering, URL parameters, Canvas                                          |
-| Discover | ISS Encyclopedia    | Static content design, timeline, stats layout                                           |
+| Section  | Page                 | What it demonstrates                                                                    |
+| -------- | -------------------- | --------------------------------------------------------------------------------------- |
+| Explore  | APOD                 | NASA API integration, date picker, async/await                                          |
+| Track    | ISS Tracker          | Real-time data, Leaflet.js, setInterval                                                 |
+| Track    | Asteroid Watch       | Complex nested JSON, Chart.js, filtering/sorting                                        |
+| Track    | Artemis II Tracker   | Ephemeris parsing, SVG path animation, vector magnitude math, real NASA trajectory data |
+| Discover | Planet Encyclopedia  | Dynamic JSON rendering, URL parameters, Canvas                                          |
+| Discover | ISS Encyclopedia     | Static content design, timeline, stats layout                                           |
+| Lab      | Space Myths vs Facts | JSON data layer, game state management, SVG animation, localStorage, CSS keyframes      |
 
 ---
 
