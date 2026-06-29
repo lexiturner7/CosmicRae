@@ -45,7 +45,7 @@
     "id": 7,
     "statement": "Astronauts float in space because there is no gravity.",
     "answer": "myth",
-    "explanation": "Gravity reaches everywhere in space, it just gets weaker the farther you get from a massive object. Astronauts on the space station float because they are in a continuous freefall closely around Earth, not because gravity disappeared. That feeling of weightlessness is called microgravity ('micro' means very small) and it happens any time you are in freefall with nothing to push back on you, like the split second at the top of a roller coaster drop. On the way to the Moon, astronauts experience microgravity because gravity becomes less and less the further away from Earth the astronauts get. Astronauts will sometimes call this 'Zero-G' or 'Zero-Gravity' because it describes the <span style='font-weight: bold;'>feeling<span> of weightlessness, not the absence of gravity itself.",
+    "explanation": "Gravity reaches everywhere in space, it just gets weaker the farther you get from a massive object. Astronauts on the space station float because they are in a continuous freefall closely around Earth, not because gravity disappeared. That feeling of weightlessness is called microgravity ('micro' means very small) and it happens any time you are in freefall with nothing to push back on you, like the split second at the top of a roller coaster drop. On the way to the Moon, astronauts experience microgravity because gravity becomes less and less the further away from Earth the astronauts get. Astronauts will sometimes call this 'Zero-G' or 'Zero-Gravity' because it describes the feeling of weightlessness, not the absence of gravity itself.",
     "difficulty": 1
   },
   {
@@ -158,7 +158,7 @@
     "id": 23,
     "statement": "Pluto is a planet.",
     "answer": "myth",
-    "explanation": "Explanation: In 2006 the International Astronomical Union decided Pluto is a dwarf planet because it has not cleared other objects out of its orbital path around the sun. There are actually several other dwarf planets in our solar system.",
+    "explanation": "In 2006 the International Astronomical Union decided Pluto is a dwarf planet because it has not cleared other objects out of its orbital path around the sun. There are actually several other dwarf planets in our solar system.",
     "difficulty": 2
   },
   {

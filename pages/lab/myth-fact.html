@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-26M6TWP9GQ"
@@ -12,7 +11,6 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-26M6TWP9GQ");
     </script>
     <meta charset="UTF-8" />
@@ -36,32 +34,33 @@
       <!-- LAUNCH SCREEN -->
       <section id="launch-screen">
         <div id="progress-indicator"></div>
-        <h3>Space Myths vs Facts</h3>
+        <h2>Space Myths vs Facts</h2>
         <h5 id="launch-screen-tagline">
           Can you identify which statements are myths and which are facts?
           <br />
           Test your knowledge on your own or in teams. <br />
           Play the quiz game or explore and guess myths at your own pace.
         </h5>
+
         <!-- step 1: play vs explore -->
-        <section id="play-explore-selection">
+        <section id="play-explore-selection" class="active">
           <button type="button" id="play" class="game-card">
             <div id="play-card">
-              <h5>Play</h5>
+              <h4>Play Game</h4>
               <p>Answer questions, beat the timer, earn points</p>
-              <p>Quiz Game</p>
             </div>
           </button>
           <button type="button" id="explore" class="game-card">
             <div id="explore-game-card">
-              <h5>Explore</h5>
-              <p>Browse and guess myths and facts at your own pace, no timer</p>
-              <p>Gallery</p>
+              <h4>Explore Gallery</h4>
+              <p>
+                Browse and guess the myths and facts at your own pace, no timer.
+              </p>
             </div>
           </button>
         </section>
-        <!-- step 2: solo vs group vs classroom -->
 
+        <!-- step 2: solo vs group vs classroom -->
         <section id="solo-group-classroom-selection" class="hidden">
           <h4>Who's Playing?</h4>
           <button type="button" id="solo" class="game-card">
@@ -85,7 +84,6 @@
         </section>
 
         <!-- enter team names -->
-
         <section id="enter-team-names" class="hidden">
           <div id="team-names">
             <h5>Name Your Teams</h5>
@@ -114,47 +112,84 @@
         <section id="level-select" class="hidden">
           <h4>Pick Your Level</h4>
           <h5>Start easy or go straight to the hard stuff</h5>
-          <button type="button" id="explorer-level-card" class="level-card">
-            <div id="explorer-level">
-              <h3>1</h3>
-              <h5>Explorer</h5>
-              <p>Great for beginners</p>
-            </div>
-          </button>
-          <button type="button" id="astronaut-level-card" class="level-card">
-            <div id="astronaut-level">
-              <h3>2</h3>
-              <h5>Astronaut</h5>
-              <p>Getting tricky</p>
-            </div>
-          </button>
-          <button type="button" id="scientist-level-card" class="level-card">
-            <div id="scientist-level">
-              <h3>3</h3>
-              <h5>Scientist</h5>
-              <p>Expert level</p>
-            </div>
-          </button>
+          <div id="level-card-display">
+            <button type="button" id="explorer-level-card" class="level-card">
+              <div id="explorer-level">
+                <h3>1</h3>
+                <h5>Explorer</h5>
+                <p>Great for beginners</p>
+              </div>
+            </button>
+            <button type="button" id="astronaut-level-card" class="level-card">
+              <div id="astronaut-level">
+                <h3>2</h3>
+                <h5>Astronaut</h5>
+                <p>Getting tricky</p>
+              </div>
+            </button>
+            <button type="button" id="scientist-level-card" class="level-card">
+              <div id="scientist-level">
+                <h3>3</h3>
+                <h5>Scientist</h5>
+                <p>Expert level</p>
+              </div>
+            </button>
+          </div>
         </section>
 
         <!-- BUTTONS -->
-        <button type="button" id="back-btn">Back</button>
-        <button type="button" id="continue-btn">Continue</button>
-        <button type="button" id="launch-game-btn" class="hidden">
-          Launch Game!
-        </button>
+        <section id="buttons" class="hidden">
+          <button type="button" id="back-btn">Back</button>
+          <button type="button" id="continue-btn">Continue</button>
+          <button type="button" id="launch-game-btn" class="hidden">
+            Launch Game!
+          </button>
+        </section>
       </section>
 
-      <!-- QUIZ TAB -->
+      <!-- QUIZ SCREEN -->
       <section id="quiz-screen" class="hidden">
         <div id="quiz-header">
           <div id="level-badge"></div>
-          <div id="timer"></div>
-          <div id="solo-score"></div>
-          <div id="progress-bar"></div>
+          <div id="timer-wrap">
+            <svg
+              id="clock-svg"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="50"
+                cy="50"
+                r="42"
+                fill="none"
+                stroke="rgba(255,255,255,0.1)"
+                stroke-width="5"
+              />
+              <circle
+                id="clock-fill"
+                cx="50"
+                cy="50"
+                r="42"
+                fill="none"
+                stroke="var(--cyan)"
+                stroke-width="5"
+                stroke-linecap="round"
+                stroke-dasharray="263.9"
+                stroke-dashoffset="0"
+                transform="rotate(-90 50 50)"
+              />
+            </svg>
+            <div id="timer">60s</div>
+          </div>
+
+          <div id="question-counter"></div>
         </div>
         <div id="question-card">
           <div id="statement"></div>
+          <p id="team-select-instruction" class="hidden">
+            Select the team who is answering
+          </p>
+
           <div id="team-answer-selection" class="hidden"></div>
           <div id="answer-selection">
             <button type="button" class="answer-btn myth" data-answer="myth">
@@ -170,55 +205,53 @@
           <h4>SCOREBOARD</h4>
           <div id="ranking"></div>
         </div>
+        <div id="quiz-bottom">
+          <div id="solo-score"></div>
+          <button type="button" class="main-menu-btn">
+            Return to Main Menu
+          </button>
+        </div>
       </section>
 
       <!-- REVEAL SCREEN -->
-
       <section id="reveal-screen" class="hidden">
         <div id="check-x"></div>
-        <!-- correct/wrong indicator -->
         <div id="answer-correct-incorrect"></div>
         <div id="repeat-statement"></div>
         <div id="its-a-myth-fact"></div>
-        <!-- explanation -->
         <div id="answer-explanation"></div>
-        <!-- score -->
         <div id="points-awarded"></div>
-        <!-- next question button -->
         <button type="button" id="next-question">NEXT QUESTION</button>
+        <button type="button" class="main-menu-btn">Return to Main Menu</button>
       </section>
 
       <!-- RESULTS SCREEN -->
       <section id="results-screen" class="hidden">
         <div id="winner-animation" class="hidden"></div>
         <div id="final-solo-score-animation" class="hidden"></div>
-        <!-- final score, personal best -->
         <div id="solo-score-banner" class="hidden">
           <h4>Final Score!</h4>
           <h2 id="final-solo-score"></h2>
         </div>
-
         <div id="winner-banner" class="hidden">
           <h4>WINNER!</h4>
           <h2 id="winning-team"></h2>
           <h4 id="winning-score"></h4>
         </div>
-        <!-- scoreboard -->
         <div id="final-scoreboard" class="hidden">
           <h4>FINAL SCOREBOARD</h4>
           <div id="final-ranking"></div>
         </div>
-        <!-- stats -->
         <div id="final-stats">
           <div id="number-correct"></div>
           <div id="accuracy"></div>
           <div id="personal-best"></div>
         </div>
-        <!-- play again, explore gallery -->
         <div id="result-screen-btns">
           <button type="button" id="play-again">PLAY AGAIN</button>
           <button type="button" id="explore-btn">EXPLORE</button>
         </div>
+        <button type="button" class="main-menu-btn">Return to Main Menu</button>
       </section>
 
       <!-- GALLERY SCREEN -->
@@ -229,7 +262,7 @@
           <div id="viewed-count"></div>
         </div>
         <div id="gallery-filter-buttons">
-          <button type="button" class="filter-buttons" data-level="all">
+          <button type="button" class="filter-buttons active" data-level="all">
             All
           </button>
           <button type="button" class="filter-buttons" data-level="explorer">
@@ -242,29 +275,29 @@
             Scientist (Expert)
           </button>
         </div>
+        <button type="button" id="back-to-menu-button-top">
+          Back to Game Menu
+        </button>
         <div id="level-cards">
           <div id="level-explorer" class="level-cards">
             <h5>Explorer (Beginner)</h5>
             <div id="explorer-level-statements"></div>
           </div>
-
           <div id="level-astronaut" class="level-cards">
             <h5>Astronaut (Tricky)</h5>
             <div id="astronaut-level-statements"></div>
           </div>
-
           <div id="level-scientist" class="level-cards">
             <h5>Scientist (Expert)</h5>
             <div id="scientist-level-statements"></div>
           </div>
         </div>
-
-        <button type="button" id="back-to-menu-button" data-menu="menu">
+        <button type="button" id="back-to-menu-button">
           Back to Game Menu
         </button>
       </section>
 
-      <!-- lightbox pop-up -->
+      <!-- LIGHTBOX -->
       <section id="lightbox-screen" class="hidden">
         <div id="lightbox">
           <div id="level-label"></div>
@@ -277,12 +310,10 @@
               Fact
             </button>
           </div>
-
           <div id="lightbox-reveal" class="hidden">
             <div id="lightbox-answer"></div>
             <div id="lightbox-explanation"></div>
           </div>
-
           <div id="next-close-buttons">
             <button type="button" id="next-lightbox">Next</button>
             <button type="button" id="close-lightbox">Close</button>
