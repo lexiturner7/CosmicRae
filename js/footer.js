@@ -70,7 +70,7 @@ document.getElementById("footer").innerHTML = `
       
 
       <div id="footer-contact-links">
-        <span>Contact</span>
+        <span style="font-size: 13px;">Contact</span>
         
           <a href="https://github.com/lexiturner7/CosmicRae" target="_blank">
             GitHub

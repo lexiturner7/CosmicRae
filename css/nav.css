@@ -1,18 +1,18 @@
-/*  NAVIGATION BAR STYLES */
-
+/* ==================== NAV BASE ====================*/
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: var(--navy);
   padding: 0 24px;
+  position: relative;
+  z-index: 100;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  font-size: 16px;
 }
 
 ul li a {
@@ -37,4 +37,205 @@ ul li a:hover {
 
 ul li a.active {
   color: var(--cyan);
+}
+
+nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 16px;
+}
+
+/* ==================== HAMBURGER BUTTON ====================*/
+#hamburger-btn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  z-index: 200;
+}
+
+#hamburger-btn span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 1px;
+  transition: all 0.3s ease;
+}
+
+#hamburger-btn.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+#hamburger-btn.open span:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger-btn.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ==================== SLIDE PANEL ====================*/
+#nav-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  z-index: 150;
+  transition: background 0.3s ease;
+}
+
+#nav-overlay.active {
+  display: block;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#slide-panel {
+  position: fixed;
+  top: 0;
+  left: -75%;
+  width: 75%;
+  max-width: 300px;
+  height: 100%;
+  background: var(--navy);
+  border-right: 2px solid var(--cyan);
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  transition: left 0.3s ease;
+}
+
+#slide-panel.open {
+  left: 0;
+}
+
+#panel-header {
+  padding: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#panel-logo {
+  font-family: "Orbitron", sans-serif;
+  color: var(--white);
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+#panel-nav-links {
+  flex: 1;
+  padding: 8px 0;
+  list-style: none;
+  margin: 0;
+}
+
+#panel-nav-links li a {
+  display: block;
+  color: var(--white);
+  padding: 16px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  transition:
+    color 0.2s,
+    background 0.2s,
+    border-left 0.2s;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+#panel-nav-links li a:hover {
+  color: var(--cyan);
+  background: rgba(34, 211, 238, 0.06);
+}
+
+#panel-nav-links li a.active[id="panel-homenav"] {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 3px solid var(--white);
+  padding-left: 17px;
+}
+
+#panel-nav-links li a.active[id="panel-explorenav"] {
+  color: var(--purple);
+  background: rgba(168, 85, 247, 0.08);
+  border-left: 3px solid var(--purple);
+  padding-left: 17px;
+}
+
+#panel-nav-links li a.active[id="panel-tracknav"] {
+  color: var(--green);
+  background: rgba(34, 197, 94, 0.08);
+  border-left: 3px solid var(--green);
+  padding-left: 17px;
+}
+
+#panel-nav-links li a.active[id="panel-discovernav"] {
+  color: var(--gold);
+  background: rgba(245, 158, 11, 0.08);
+  border-left: 3px solid var(--gold);
+  padding-left: 17px;
+}
+
+#panel-nav-links li a.active[id="panel-labnav"] {
+  color: var(--cyan);
+  background: rgba(34, 211, 238, 0.08);
+  border-left: 3px solid var(--cyan);
+  padding-left: 17px;
+}
+
+#panel-nav-links li a.flash-home {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+#panel-nav-links li a.flash-explore {
+  color: var(--purple);
+  background: rgba(168, 85, 247, 0.12);
+}
+
+#panel-nav-links li a.flash-track {
+  color: var(--green);
+  background: rgba(34, 197, 94, 0.12);
+}
+
+#panel-nav-links li a.flash-discover {
+  color: var(--gold);
+  background: rgba(245, 158, 11, 0.12);
+}
+
+#panel-nav-links li a.flash-lab {
+  color: var(--cyan);
+  background: rgba(34, 211, 238, 0.12);
+}
+
+#panel-footer {
+  padding: 16px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.05em;
+}
+
+/* ==================== RESPONSIVE ====================*/
+@media (max-width: 768px) {
+  nav > ul {
+    display: none;
+  }
+
+  #hamburger-btn {
+    display: flex;
+  }
 }

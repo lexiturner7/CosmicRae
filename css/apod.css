@@ -163,3 +163,17 @@ nav {
     opacity: 1;
   }
 }
+
+@media (max-width: 768px) {
+  .apod-layout {
+    flex-direction: column;
+  }
+
+  .apod-content-panel {
+    padding-right: 0;
+  }
+
+  #apod-date-picker {
+    width: 100%;
+  }
+}
