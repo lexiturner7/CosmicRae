@@ -136,3 +136,23 @@ nav {
     opacity: 1;
   }
 }
+
+@media (max-width: 768px) {
+  .iss-layout {
+    flex-direction: column;
+  }
+
+  .iss-content-panel {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .iss-content-panel {
+    width: 100%;
+  }
+  #iss-link {
+    max-width: 90%;
+    width: 100%;
+  }
+}
