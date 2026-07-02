@@ -151,9 +151,6 @@ nav {
   .iss-content-panel {
     width: 100%;
   }
-}
-
-@media (max-width: 768px) {
   #iss-link {
     max-width: 90%;
     width: 100%;

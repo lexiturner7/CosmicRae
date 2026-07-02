@@ -309,3 +309,33 @@ main {
     opacity: 1;
   }
 }
+
+@media (max-width: 768px) {
+  #artemis-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #artemis-stats > div {
+    border-bottom: 1px solid rgba(var(--white-rgb), 0.05);
+  }
+  #artemis-crew {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #mission-overview {
+    flex-direction: column;
+  }
+  #artemis-timeline {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  #artemis-stats {
+    grid-template-columns: 1fr;
+  }
+  #artemis-stats > div {
+    border-bottom: 1px solid rgba(var(--white-rgb), 0.05);
+  }
+  #artemis-crew {
+    grid-template-columns: 1fr;
+  }
+}
