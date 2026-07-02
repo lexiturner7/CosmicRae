@@ -388,3 +388,63 @@ main {
     opacity: 1;
   }
 }
+
+@media (max-width: 768px) {
+  .asteroid-data {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .asteroid-data {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  #today-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  #today-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  #today-stats > div {
+    border-bottom: 1px solid rgba(var(--white-rgb), 0.05);
+  }
+}
+
+@media (max-width: 480px) {
+  #today-stats > div {
+    border-bottom: 1px solid rgba(var(--white-rgb), 0.05);
+  }
+}
+
+@media (max-width: 768px) {
+  .hazard-badge {
+    white-space: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .hazard-badge {
+    white-space: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-btn {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-btn {
+    margin: 5px;
+  }
+}
