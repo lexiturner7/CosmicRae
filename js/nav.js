@@ -75,6 +75,7 @@ const slidePanel = document.getElementById("slide-panel");
 const navOverlay = document.getElementById("nav-overlay");
 
 function openMenu() {
+  if (window.innerWidth > 768) return;
   slidePanel.classList.add("open");
   navOverlay.classList.add("active");
   hamburgerBtn.classList.add("open");

@@ -1,19 +1,19 @@
 nav {
   background-color: transparent;
-  z-index: 10;
+  /* z-index: 10;
   position: fixed;
-  top: 0px;
+  top: 0px; */
 }
 
 #navbar ul li #discovernav {
   color: var(--gold);
   font-weight: bold;
 }
-
+/* 
 #navbar ul {
   position: fixed;
   right: 0px;
-}
+} */
 
 /* ************** NAV BAR ************** */
 
@@ -228,5 +228,42 @@ nav {
   }
   50% {
     opacity: 1;
+  }
+}
+
+@media (min-width: 769px) {
+  nav {
+    background-color: transparent;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+  }
+
+  nav > ul {
+    position: fixed;
+    right: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  #planet-navbar {
+    display: none;
+  }
+
+  #planet-hero-layout {
+    flex-direction: column;
+  }
+
+  #planet-sections {
+    grid-template-columns: 1fr;
+  }
+
+  #model {
+    width: 100% !important;
+    height: 300px !important;
+  }
+
+  #planet-model-container {
+    width: 100%;
   }
 }
