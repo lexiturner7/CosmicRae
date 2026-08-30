@@ -326,6 +326,25 @@ main {
   #artemis-timeline {
     flex-direction: column;
   }
+
+  .timeline-popup {
+    position: relative;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .timeline-popup img {
+    width: 100%;
+  }
+
+  .timeline-popup p {
+    width: 100%;
+  }
+
+  .mission-timeline-item {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 480px) {
