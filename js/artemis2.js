@@ -25,23 +25,32 @@ for (let i = 0; i < 140; i++) {
 const timelineItems = document.querySelectorAll(".mission-timeline-item");
 
 timelineItems.forEach((item) => {
+  const popup = item.querySelector(".timeline-popup");
+
   item.addEventListener("mouseenter", () => {
-    const popup = item.querySelector(".timeline-popup");
+    if (window.innerWidth > 768) {
+      popup.style.display = "flex";
+      popup.style.top = "0";
+      popup.style.bottom = "auto";
 
-    popup.style.display = "flex";
-    popup.style.top = "0";
-    popup.style.bottom = "auto";
-
-    const rect = popup.getBoundingClientRect();
-
-    if (rect.bottom > window.innerHeight) {
-      popup.style.top = "auto";
-      popup.style.bottom = "0";
+      const rect = popup.getBoundingClientRect();
+      if (rect.bottom > window.innerHeight) {
+        popup.style.top = "auto";
+        popup.style.bottom = "0";
+      }
     }
   });
 
   item.addEventListener("mouseleave", () => {
-    const popup = item.querySelector(".timeline-popup");
-    popup.style.display = "none";
+    if (window.innerWidth > 768) {
+      popup.style.display = "none";
+    }
+  });
+
+  item.addEventListener("click", () => {
+    if (window.innerWidth <= 768) {
+      const isOpen = popup.style.display === "flex";
+      popup.style.display = isOpen ? "none" : "flex";
+    }
   });
 });
